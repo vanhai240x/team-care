@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Font -->
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap&subset=latin-ext" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
@@ -19,96 +18,116 @@
 
 <body>
 
-    <div class="container-fluid">
-        <header class="header">
-            <div class="header-top container">
-                <div class="header-links">
-                    <a class="header-links--item">Trang chủ</a>
-                    <a class="header-links--item">Page 1</a>
-                    <a class="header-links--item">Page 2</a>
-                    <a class="header-links--item">Page 31</a>
-                    <a class="header-links--item">Tin tức</a>
-                    <a class="header-links--item">Liên hệ</a>
-                </div>
-                <div class="header-socials">
-                    <a href="#" class="header-socials--item"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="header-socials--item"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="header-socials--item"><i class="fab fa-google-plus-g"></i></a>
-                    <a href="#" class="header-socials--item"><i class="fab fa-youtube"></i></a>
+    <!-- Start: Header -->
+    <header class="header-mobile">
+        <div class="show d-lg-none">
+            <img class="logo-img" src="/images/logo-mini.svg" alt="">
+            <img class="burger-img" src="/images/burger.svg" alt="">
+        </div>
+        <div class="filter">
+            <div class="toggle-menu">
+                <img class="x-img" src="/images/icon_x_white.svg" alt="">
+                <nav class="navbar">
+                    <ul>
+                        <li class="nav-item"><a class="nav-link active" href="">Trang chủ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="">Page 1</a></li>
+                        <li class="nav-item"><a class="nav-link" href="">Page 2</a></li>
+                        <li class="nav-item"><a class="nav-link" href="">Page 3</a></li>
+                        <li class="nav-item"><a class="nav-link" href="">Tin tức</a></li>
+                        <li class="nav-item"><a class="nav-link" href="">Liên hệ</a></li>
+                    </ul>
+                </nav>
+                <div class="social">
+                    <div class="messenger"><img src="/images/icon_mesenger.svg" alt=""></div>
+                    <div class="zalo">
+                        <img src="/images/icon_zalo.svg" alt="">
+                        <p>0911.25.4444</p>
+                    </div>
+                    <div class="phone">
+                        <img src="/images/icon_phone_white.svg" alt="">
+                        <p>0911.25.4444</p>
+                    </div>
                 </div>
             </div>
-            <div class="header-center container">
+        </div>
+    </header>
+    <header class="d-none d-lg-block header-desktop">
+        <div class="header-top container-fluid d-none d-lg-block">
+            <div class="container">
                 <div class="header-logo">
                     <img src="/images/logo.png" alt="">
                 </div>
-                <div class="header-disc row">
-                    <div class="col-lg-4">
+                <div class="header-disc">
+                    <div class="header-disc__item">
                         <img src="/images/icon_location.png" alt="" class="icon">
                         <div class="context">
                             <p class="context--bold">Địa chỉ</p>
-                            <p class="context-light">CS1: Số 131F Thái Thịnh, Đống Đa</p>
-                            <p class="context-light">CS2: Số 118B1 Thành Công, Ba Đình</p>
+                            <p class="context--light">CS1: Số 131F Thái Thịnh, Đống Đa</p>
+                            <p class="context--light">CS2: Số 118B1 Thành Công, Ba Đình</p>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="header-disc__item">
                         <img src="/images/icon_phone.png" alt="" class="icon">
                         <div class="context">
                             <p class="context--bold">Hotline</p>
-                            <p class="context-light">CS1: 0911.25.4444</p>
-                            <p class="context-light">CS2: 0973.73.76.76</p>
+                            <p class="context--light">CS1: 0911.25.4444</p>
+                            <p class="context--light">CS2: 0973.73.76.76</p>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="header-disc__item">
                         <img src="/images/icon_clock.png" alt="" class="icon">
                         <div class="context">
                             <p class="context--bold">Giờ mở cửa</p>
-                            <p class="context-light">8h sáng đến 6h chiều</p>
+                            <p class="context--light">8h sáng đến 6h chiều</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="header-bottom container-fluid">
-                <div class="container">
-                    <nav class="navbar navbar-expand-sm navbar-light bg-light">
-                        <a class="navbar-brand" href="#">Navbar</a>
-                        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="collapsibleNavId">
-                            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Link</a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                                    <div class="dropdown-menu" aria-labelledby="dropdownId">
-                                        <a class="dropdown-item" href="#">Action 1</a>
-                                        <a class="dropdown-item" href="#">Action 2</a>
-                                    </div>
-                                </li>
-                            </ul>
-                            <form class="form-inline my-2 my-lg-0">
-                                <input class="form-control mr-sm-2" type="text" placeholder="Search">
-                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                            </form>
-                        </div>
-                    </nav>
-                </div>
+        </div>
+        <div class="header-bottom">
+            <div class="container">
+                <nav class="navbar">
+                    <ul>
+                        <li class="nav-item"><a class="nav-link" href="">Trang chủ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="">Thay màn hình/ép kính</a></li>
+                        <li class="nav-item"><a class="nav-link" href="">Thay pin</a></li>
+                        <li class="nav-item"><a class="nav-link" href="">Thay camera</a></li>
+                        <li class="nav-item"><a class="nav-link" href="">Thay vỏ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="">Tin tức</a></li>
+                        <li class="nav-item"><a class="nav-link" href="">Liên hệ</a></li>
+                    </ul>
+                </nav>
             </div>
-        </header>
+        </div>
+    </header>
+    <!-- End: Header -->
 
-        <footer>
+    <!-- Start: Banner -->
+    <section class="container-fluid banner">
+        <div class="wrapper">
+            <h3 class="brand">teamcare</h3>
+            <p class="text-bold">NHANH CHÓNG - BỀN ĐẸP - TIẾT KIỆM</p>
+            <p class="text-light">TEAMCARE - Chuyên gia hàng đầu lĩnh vực Sửa chữa điện thoại, laptop; thay màn hình, mặt kính; ép kính; thay camera, vỏ, pin…</p>
+            <button class="btn btn-border-red">liên hệ ngay</button>
+        </div>
+    </section>
+    <!-- End: Banner -->
 
-        </footer>
+    <div class="brand">
     </div>
+
+    <div class="service container">
+
+    </div>
+
+    <footer>
+    </footer>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="../js/jquery3.2.1/jquery3.2.1.min.js"></script>
     <script src="../js/popper/popper.min.js"></script>
     <script src="../js/bootstrap/bootstrap.min.js"></script>
+    <script src="/js/index.js"></script>
 </body>
 
 </html>
