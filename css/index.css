@@ -16,7 +16,7 @@
   height: 47px;
   border: 2px solid #F90729;
   border-radius: 20px;
-  background-color: none;
+  background: none;
   transition: all 0.4s;
   -webkit-transition: all 0.4s;
   -moz-transition: all 0.4s;
@@ -415,6 +415,120 @@ body {
 }
 .service .line.line-4 .img::after {
   background-image: url("/images/service-sub-4.svg");
+}
+.service .after-sale {
+  padding: 2rem 1rem;
+  background-color: #E5E5E5;
+}
+.service .after-sale .wrapper .title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 38px;
+  color: #F90729;
+  position: relative;
+  margin-bottom: 52px;
+}
+.service .after-sale .wrapper .title::before {
+  content: "";
+  width: 175px;
+  height: 4px;
+  background-color: #F90729;
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+}
+.service .after-sale .wrapper .line {
+  display: flex;
+}
+.service .after-sale .wrapper .line .icon {
+  position: relative;
+}
+.service .after-sale .wrapper .line .icon .border {
+  border: unset !important;
+}
+.service .after-sale .wrapper .line .icon .tick {
+  position: absolute;
+  top: 0;
+  left: 9px;
+}
+.service .after-sale .wrapper .line .context {
+  padding-left: 1rem;
+}
+.service .after-sale .wrapper .line .context .text-light {
+  font-size: 1.25rem;
+  line-height: 29px;
+  color: #4F4F4F !important;
+}
+.service .after-sale .wrapper .line .context .text-light .text-red {
+  color: #F90729 !important;
+  font-weight: bold;
+}
+.service .company {
+  padding: 2rem 1rem;
+}
+.service .company .line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.service .company .line.line-1 {
+  display: flex;
+}
+.service .company .line.line-1 .right {
+  display: flex;
+}
+.service .company .line.line-1 .right .icon {
+  margin-right: 10px;
+}
+.service .company .line.line-1 .right .content .text-bold {
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 22px;
+  color: #4F4F4F;
+  margin-bottom: 6px;
+}
+.service .company .line.line-1 .right .content .text-light {
+  font-size: 14px;
+  line-height: 22px;
+  color: #828282 !important;
+  margin-bottom: unset;
+}
+.service .company .line.line-2 {
+  justify-content: space-around;
+}
+.service .company .line.line-2 .nav-link .link-light {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  color: #828282;
+  margin-bottom: 20px;
+}
+.service .company .line.line-2 .nav-link .link-light.active {
+  color: #F90729;
+}
+.service .company .line.line-3 {
+  justify-content: flex-start;
+}
+.service .company .line.line-3 .icon {
+  margin-left: 2rem;
+  cursor: pointer;
+}
+.service .company .line.line-3 .icon:first-child {
+  margin-left: unset;
+}
+.service .copyright {
+  height: 32px;
+  background-color: #F90729;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.service .copyright p {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 19px;
+  color: #FFFFFF;
+  margin-bottom: unset;
 }
 
 .footer .guarantee .top {

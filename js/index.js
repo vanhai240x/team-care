@@ -1,5 +1,4 @@
 $(document).ready(() => {
-    // Slider
     $(".regular").slick({
         dots: true,
         infinite: true,
