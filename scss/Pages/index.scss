@@ -18,7 +18,7 @@ $blue: #00ACD4;
 //  Font
 @font-face {
     font-family: Lato;
-    src: url('../../font/Lato-Regular.ttf');
+    src: url('/font/Lato-Regular.ttf');
 }
 
 @mixin alignCenter() {
@@ -285,7 +285,7 @@ body {
 
 .banner {
     height: 500px;
-    background: url('../../images/banner-home.svg') center no-repeat;
+    background: url('/images/banner-home.svg') center no-repeat;
     background-size: cover;
     display: flex;
     align-items: center;
@@ -428,24 +428,24 @@ body {
         }
         &.line-1 {
             .img::after {
-                background-image: url('../../images/service-sub-1.svg');
+                background-image: url('/images/service-sub-1.svg');
             }
         }
         &.line-2 {
             flex-direction: column;
             .img::after {
-                background-image: url('../../images/service-sub-2.svg');
+                background-image: url('/images/service-sub-2.svg');
             }
         }
         &.line-3 {
             .img::after {
-                background-image: url('../../images/service-sub-3.svg');
+                background-image: url('/images/service-sub-3.svg');
             }
         }
         &.line-4 {
             flex-direction: column;
             .img::after {
-                background-image: url('../../images/service-sub-4.svg');
+                background-image: url('/images/service-sub-4.svg');
             }
         }
     }
@@ -454,7 +454,7 @@ body {
 .footer {
     .guarantee {
         .top {
-            background: url('../../images/guarantee-bg.svg') center no-repeat;
+            background: url('/images/guarantee-bg.svg') center no-repeat;
             background-size: cover;
             padding: 2rem 0;
             .container {
@@ -777,7 +777,7 @@ body {
             .bg-left {
                 width: calc(100% - 460px);
                 height: 460px;
-                background: url('../../images/after-sale-bg.svg') left no-repeat;
+                background: url('/images/after-sale-bg.svg') left no-repeat;
                 background-size: 1078px;
                 position: absolute;
                 top: 0;
