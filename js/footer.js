@@ -1,8 +1,6 @@
 // Footer
 $(document).ready(() => {
     let iconSocialFooter = $(".footer .line-3 .icon");
-    console.log(iconSocialFooter);
-
     for (let i = 0; i < iconSocialFooter.length; i++) {
         iconSocialFooter[i].addEventListener("mouseover", () => {
             switch (i) {

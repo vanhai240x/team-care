@@ -722,6 +722,7 @@ body {
   }
   .footer .after-sale .wrapper .line .context .text-light {
     font-size: 1.5rem;
+    max-width: 460px;
   }
   .footer .after-sale .bg-left {
     width: calc(100% - 460px);
