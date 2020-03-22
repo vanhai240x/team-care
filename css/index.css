@@ -411,9 +411,6 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.header-desktop .header-bottom .container .navbar ul .nav-item {
-  max-width: 125px;
-}
 .header-desktop .header-bottom .container .navbar ul .nav-item .nav-link {
   font-weight: 500;
   font-size: 1rem;

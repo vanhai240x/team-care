@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+* {
+    outline: none;
+}
+
 html {
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
@@ -111,6 +115,7 @@ button,
 [type="reset"],
 [type="submit"] {
     -webkit-appearance: button;
+    cursor: pointer;
 }
 
 button::-moz-focus-inner,
