@@ -1,15 +1,7 @@
 @import '../helpers/font';
 @import '../helpers/reset';
+@import '../helpers/variable';
 @import '../helpers/mixin';
-// Colors
-$gray-2: #4F4F4F;
-$gray-3: #828282;
-$gray-4: #BDBDBD;
-$gray-5: #E0E0E0;
-$gray-6: #F2F2F2;
-$white: #FFFFFF;
-$red: #F90729;
-$blue: #00ACD4;
 // Component
 .btn-border-red {
     font-weight: bold;
@@ -223,7 +215,6 @@ body {
                     height: 100%;
                     @include flex(space-between, center);
                     .nav-item {
-                        max-width: 125px;
                         .nav-link {
                             font-weight: 500;
                             font-size: 1rem;
