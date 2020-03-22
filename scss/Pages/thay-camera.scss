@@ -65,7 +65,7 @@ body {
 
 .banner {
     height: 500px;
-    background: url('/images/replace-screen/banner-bg.svg') center no-repeat;
+    background: url('/images/change-camera/change-camera-bg.jpg') center no-repeat;
     background-size: cover;
     display: flex;
     align-items: center;
@@ -92,11 +92,13 @@ body {
             font-size: 2rem;
             line-height: 38px;
             margin-bottom: 20px;
+            text-transform: uppercase;
         }
         .text-light {
             font-size: 1rem;
             line-height: 19px;
             margin-bottom: 20px;
+            max-width: 585px;
         }
     }
 }
@@ -135,64 +137,47 @@ body {
     }
 }
 
-.step-select {
-    background-color: $gray-6;
+.banner-2 {
     padding: 1rem;
+    background-color: $gray-5;
+    .bg-right {
+        display: none;
+    }
     .container {
-        position: relative;
-        .text-light {
-            font-size: 1rem;
-            line-height: 19px;
-            text-align: center;
-            color: $gray-2;
-        }
-        .steps {
-            padding: 1rem 0;
-            @include flex(space-between,
-            center);
-            flex-direction: column;
-            .step {
-                @include flex(center,
-                center);
-                flex-direction: column;
-                .wrapper {
-                    width: 100px;
-                    height: 100px;
-                    background: url('/images/replace-screen/dot_circle.svg') center no-repeat;
-                    background-size: contain;
-                    @include flex(center,
-                    center);
-                    margin-bottom: 10px;
-                    span {
-                        font-weight: bold;
-                        font-size: 3rem;
-                        line-height: 77px;
-                        color: $gray-3;
+        .content {
+            .line {
+                @include flex(space-between,
+                flex-start);
+                margin-bottom: 1rem;
+                .icon {
+                    position: relative;
+                    margin-right: 0.5rem;
+                    .border {
+                        width: 18px;
+                    }
+                    .tick {
+                        width: 13px;
+                        position: absolute;
+                        right: -2px;
                     }
                 }
-                .text-bold {
-                    font-weight: bold;
-                    font-size: 22px;
-                    line-height: 26px;
-                    text-align: center;
-                    color: $gray-2;
+                .context {
+                    .text-light {
+                        font-size: 1rem;
+                        line-height: 19px;
+                        color: $gray-2;
+                        margin-top: -3px;
+                    }
                 }
-                &.step-1,
-                &.step-2 {
-                    margin-bottom: 2rem;
+                &.line-4 {
+                    .text-bold {
+                        font-weight: bold;
+                        font-size: 22px;
+                        line-height: 26px;
+                        color: $gray-2;
+                        padding-left: 30px;
+                    }
                 }
-            }
-            .arrow {
-                width: 2.5rem;
-                height: 22px;
-                position: relative;
-                top: -1rem;
-                background: url('/images/replace-screen/arrow_right_red.png') right no-repeat;
-                transform: rotate(90deg);
-                -webkit-transform: rotate(90deg);
-                -moz-transform: rotate(90deg);
-                -ms-transform: rotate(90deg);
-                -o-transform: rotate(90deg);
             }
         }
     }
@@ -552,43 +537,30 @@ body {
             }
         }
     }
-    .step-select {
-        padding: 70px 1rem;
+    .banner-2 {
+        height: 525px;
+        position: relative;
+        .bg-right {
+            display: block;
+            width: calc(100% - 630px);
+            max-width: 1048px;
+            height: 100%;
+            background: url('/images/change-camera/banner-2-bg.png') right no-repeat;
+            background-size: 1048px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+        }
         .container {
-            .wrapper-text {
-                position: relative;
-                .text-light {
-                    max-width: 585px;
-                    @include alignCenterX();
-                    position: relative;
-                }
-            }
-            .steps {
-                flex-direction: row;
-                padding: 60px 0;
-                .step {
-                    .wrapper {
-                        width: 138px;
-                        height: 138px;
-                        margin-bottom: 25px;
-                        span {
-                            font-size: 64px;
-                        }
-                    }
-                    &.step-1,
-                    &.step-2 {
-                        margin-bottom: 0;
-                    }
-                }
-                .arrow {
-                    max-width: 175px;
-                    width: 15%;
-                    top: -2rem;
-                    transform: rotate(0);
-                    -webkit-transform: rotate(0);
-                    -moz-transform: rotate(0);
-                    -ms-transform: rotate(0);
-                    -o-transform: rotate(0);
+            @include flex(flex-end,
+            center);
+            .content {
+                width: 500px;
+                padding-top: 100px;
+                .line-4 {
+                    margin-top: 54px;
+                    margin-bottom: 0;
                 }
             }
         }
@@ -776,8 +748,8 @@ body {
     .useful {
         padding: 0;
     }
-    .step-select {
-        padding: 70px 0;
+    .banner-2 {
+        padding: 15px 0;
     }
     .service {
         padding: 110px 0 200px;
@@ -802,4 +774,4 @@ body {
     }
 }
 
-// sass --watch scss/pages/thay-man-hinh.scss:css/thay-man-hinh.css
+// sass --watch scss/pages/thay-camera.scss:css/thay-camera.css
