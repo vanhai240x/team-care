@@ -837,7 +837,7 @@ body {
 
 .banner {
   height: 500px;
-  background: url("/images/replace-screen/banner-bg.svg") center no-repeat;
+  background: url("/images/replace-battery/banner-bg.jpg") center no-repeat;
   background-size: cover;
   display: flex;
   align-items: center;
@@ -867,11 +867,13 @@ body {
   font-size: 2rem;
   line-height: 38px;
   margin-bottom: 20px;
+  text-transform: uppercase;
 }
 .banner .wrapper .text-light {
   font-size: 1rem;
   line-height: 19px;
   margin-bottom: 20px;
+  max-width: 580px;
 }
 
 .useful {
@@ -1063,6 +1065,7 @@ body {
   line-height: 19px;
   color: #4F4F4F;
   font-weight: normal;
+  width: 33.33%;
 }
 .service .container .line .content .wrapper-table .table tbody tr {
   height: 60px;
@@ -1070,7 +1073,7 @@ body {
   align-items: center;
 }
 .service .container .line .content .wrapper-table .table tbody tr td {
-  width: 50%;
+  width: 33.33%;
   font-size: 1rem;
   line-height: 19px;
   color: #4F4F4F;
@@ -1100,15 +1103,6 @@ body {
   background: url("/images/replace-screen/arrow_down_red.svg") center no-repeat;
   background-size: 15px;
   margin-left: 10px;
-}
-.service .container .line.line-2 {
-  margin-top: 2rem;
-}
-.service .container .line.line-2 .image .img-1 {
-  float: left;
-}
-.service .container .line.line-2 .image .img-2 {
-  left: 46vw;
 }
 
 .commit {
@@ -1219,60 +1213,72 @@ body {
   color: #F90729;
 }
 
-.faq {
+.customer-said {
+  background: #F2F2F2;
+  padding: 2rem 1rem;
+}
+.customer-said .container {
+  max-width: 790px;
+}
+.customer-said .container .slider .item {
+  display: flex !important;
+  background-color: #FFFFFF;
   padding: 1rem;
 }
-.faq .container .content .item {
-  background: #F2F2F2;
-  padding: 2rem;
-  margin-bottom: 1rem;
+.customer-said .container .slider .item .left img, .customer-said .commit .container .slider .item .ticket .right img, .commit .customer-said .container .slider .item .ticket .right img, .customer-said .commit .container .ticket .slider .item .right img, .commit .customer-said .container .ticket .slider .item .right img {
+  width: 80px;
+  height: 80px;
+  margin-right: 0.5rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
-.faq .container .content .item .text-bold {
-  font-weight: bold;
-  font-size: 22px;
-  line-height: 26px;
-  text-align: center;
-  color: #4F4F4F;
-  margin-bottom: 1rem;
-}
-.faq .container .content .item .text-light {
-  font-size: 1rem;
-  line-height: 19px;
-  text-align: center;
-  color: #4F4F4F;
-  margin-bottom: 1rem;
-}
-.faq .container .content .item .text-light .text-red {
-  color: #F90729;
-  font-size: 1.25rem;
-  font-weight: bold;
-}
-.faq .container .content .item .wrapper-button {
-  text-align: center;
-}
-.faq .container .content .item .wrapper-button .btn-red {
-  max-width: 235px;
-  width: 100%;
-  height: 50px;
-  border: 2px solid #F90729;
-  border-radius: 30px;
+.customer-said .container .slider .item .right .text-red {
   font-weight: bold;
   font-size: 1rem;
   color: #F90729;
-  line-height: 19px;
-  background: none;
-  transition: all 0.4s;
-  -webkit-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  -ms-transition: all 0.4s;
-  -o-transition: all 0.4s;
+  line-height: 20px;
 }
-.faq .container .content .item .wrapper-button .btn-red:hover {
-  color: #FFFFFF;
-  background: #F90729;
+.customer-said .container .slider .item .right .text-small {
+  font-size: 12px;
+  line-height: 20px;
+  color: #828282;
 }
-.faq .container .content .item.item-3 {
-  margin-bottom: 0;
+.customer-said .container .slider .item .right .text-light {
+  font-size: 1rem;
+  line-height: 20px;
+  color: #4F4F4F;
+  letter-spacing: 0.01em;
+  text-align: justify;
+}
+.customer-said .container .slider .slick-arrow {
+  display: none !important;
+}
+.customer-said .container .slider .slick-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: -32px;
+}
+.customer-said .container .slider .slick-dots li {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #9e9e9e;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.customer-said .container .slider .slick-dots li.slick-active {
+  width: 1rem;
+  height: 1rem;
+  background-color: #F90729;
+}
+.customer-said .container .slider .slick-dots li button::before {
+  content: none;
 }
 
 @media (min-width: 768px) {
@@ -1336,7 +1342,7 @@ body {
   }
 
   .service {
-    padding: 110px 16px 200px;
+    padding: 120px 16px;
     position: relative;
   }
   .service::before {
@@ -1347,20 +1353,8 @@ body {
     background: url("/images/replace-screen/service-sub-left.svg") left no-repeat;
     background-size: contain;
     position: absolute;
-    top: -32px;
+    top: -20px;
     left: 0;
-    z-index: -1;
-  }
-  .service::after {
-    content: "";
-    display: block;
-    width: 200px;
-    height: 300px;
-    background: url("/images/replace-screen/service-sub-2.svg") right no-repeat;
-    background-size: contain;
-    position: absolute;
-    top: 44%;
-    right: 0;
     z-index: -1;
   }
   .service .container .line {
@@ -1381,13 +1375,6 @@ body {
     flex-direction: row-reverse;
   }
   .service .container .line.line-1 .image .img-2 {
-    top: -10vw;
-  }
-  .service .container .line.line-2 {
-    margin-top: 150px;
-  }
-  .service .container .line.line-2 .image .img-2 {
-    left: 24vw;
     top: -10vw;
   }
 
@@ -1448,6 +1435,13 @@ body {
   .subscribe .container .right .wrapper-button {
     text-align: right;
   }
+
+  .customer-said {
+    padding: 90px 16px;
+  }
+  .customer-said .container .slider .slick-dots {
+    bottom: -50px;
+  }
 }
 @media (min-width: 992px) {
   .useful {
@@ -1475,31 +1469,6 @@ body {
   .useful .container .line .context .text-light {
     font-size: 1rem;
   }
-
-  .faq {
-    padding: 90px 16px 80px;
-  }
-  .faq .container .content {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-  .faq .container .content .item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    width: calc((100% / 3) - 15px);
-    height: 270px;
-    margin-bottom: 0;
-    padding: 55px;
-  }
-  .faq .container .content .item .wrapper-button .btn-red {
-    width: 235px;
-  }
-  .faq .container .content .item.item-3 {
-    justify-content: flex-start;
-  }
 }
 @media (min-width: 1200px) {
   .banner {
@@ -1515,7 +1484,7 @@ body {
   }
 
   .service {
-    padding: 110px 0 200px;
+    padding: 126px 0;
   }
   .service .container .line.line-1 .image .img-2 {
     top: -130px;
@@ -1532,10 +1501,6 @@ body {
   .subscribe {
     padding: 87px 100px 68px;
   }
-
-  .faq {
-    padding: 90px 0 80px;
-  }
 }
 
-/*# sourceMappingURL=thay-man-hinh.css.map */
+/*# sourceMappingURL=replace-battery.css.map */

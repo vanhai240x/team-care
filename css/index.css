@@ -519,7 +519,7 @@ template {
 }
 .footer .after-sale {
   padding: 2rem 1rem;
-  background-color: #E5E5E5;
+  background-color: #F2F2F2;
 }
 .footer .after-sale .wrapper .title {
   font-weight: bold;
@@ -878,7 +878,7 @@ body {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background-color: #E0E0E0;
+  background-color: #666666;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -894,7 +894,7 @@ body {
 }
 
 .service {
-  background-color: #E5E5E5;
+  background-color: #F2F2F2;
   padding: 2rem 0;
 }
 .service .title h3 {

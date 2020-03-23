@@ -65,7 +65,7 @@ body {
 
 .banner {
     height: 500px;
-    background: url('/images/change-camera/change-camera-bg.jpg') center no-repeat;
+    background: url('/images/replace-case/banner-bg.jpg') center no-repeat;
     background-size: cover;
     display: flex;
     align-items: center;
@@ -204,7 +204,12 @@ body {
                 flex-direction: column;
                 margin-bottom: 1rem;
                 .icon {
-                    img {}
+                    position: relative;
+                    .sub-icon {
+                        position: absolute;
+                        top: 6px;
+                        left: 7px;
+                    }
                 }
                 .text-bold {
                     font-weight: bold;
@@ -581,7 +586,7 @@ body {
             width: calc(100% - 630px);
             max-width: 1048px;
             height: 100%;
-            background: url('/images/change-camera/banner-2-bg.png') right no-repeat;
+            background: url('/images/replace-case/banner-2-bg.png') right no-repeat;
             background-size: 1048px;
             position: absolute;
             top: 0;
@@ -812,4 +817,4 @@ body {
     }
 }
 
-// sass --watch scss/pages/thay-camera.scss:css/thay-camera.css
+// sass --watch scss/pages/replace-case.scss:css/replace-case.css
