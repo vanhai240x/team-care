@@ -339,7 +339,7 @@ body {
 
 .commit {
     padding: 1rem;
-    background-color: #E5E5E5;
+    background-color: $gray-6;
     .container {
         >.text-light {
             font-size: 1rem;
@@ -463,7 +463,7 @@ body {
 }
 
 .customer-said {
-    background: #E5E5E5;
+    background: $gray-6;
     padding: 2rem 1rem;
     .container {
         max-width: 790px;

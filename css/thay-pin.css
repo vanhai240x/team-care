@@ -519,7 +519,7 @@ template {
 }
 .footer .after-sale {
   padding: 2rem 1rem;
-  background-color: #E5E5E5;
+  background-color: #F2F2F2;
 }
 .footer .after-sale .wrapper .title {
   font-weight: bold;
@@ -1107,7 +1107,7 @@ body {
 
 .commit {
   padding: 1rem;
-  background-color: #E5E5E5;
+  background-color: #F2F2F2;
 }
 .commit .container > .text-light {
   font-size: 1rem;
@@ -1214,7 +1214,7 @@ body {
 }
 
 .customer-said {
-  background: #E5E5E5;
+  background: #F2F2F2;
   padding: 2rem 1rem;
 }
 .customer-said .container {

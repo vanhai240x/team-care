@@ -519,7 +519,7 @@ template {
 }
 .footer .after-sale {
   padding: 2rem 1rem;
-  background-color: #E5E5E5;
+  background-color: #F2F2F2;
 }
 .footer .after-sale .wrapper .title {
   font-weight: bold;
@@ -913,7 +913,7 @@ body {
 
 .banner-2 {
   padding: 1rem;
-  background-color: #E0E0E0;
+  background-color: #666666;
 }
 .banner-2 .bg-right {
   display: none;
@@ -944,10 +944,10 @@ body {
 }
 .banner-2 .container .content .line.line-4 .text-bold {
   font-weight: bold;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 26px;
   color: #4F4F4F;
-  padding-left: 30px;
+  padding-left: 1rem;
 }
 
 .signal {
@@ -1124,7 +1124,7 @@ body {
 
 .commit {
   padding: 1rem;
-  background-color: #E5E5E5;
+  background-color: #F2F2F2;
 }
 .commit .container > .text-light {
   font-size: 1rem;
@@ -1328,9 +1328,13 @@ body {
     width: 500px;
     padding-top: 100px;
   }
-  .banner-2 .container .content .line-4 {
+  .banner-2 .container .content .line.line-4 {
     margin-top: 54px;
     margin-bottom: 0;
+  }
+  .banner-2 .container .content .line.line-4 .text-bold {
+    font-size: 22px;
+    padding-left: 30px;
   }
 
   .signal {
