@@ -139,7 +139,7 @@ body {
 
 .banner-2 {
     padding: 1rem;
-    background-color: $gray-5;
+    background-color: #E0E0E0;
     .bg-right {
         display: none;
     }
@@ -172,10 +172,10 @@ body {
                 &.line-4 {
                     .text-bold {
                         font-weight: bold;
-                        font-size: 22px;
+                        font-size: 20px;
                         line-height: 26px;
                         color: $gray-2;
-                        padding-left: 30px;
+                        padding-left: 1rem;
                     }
                 }
             }
@@ -368,7 +368,7 @@ body {
 
 .commit {
     padding: 1rem;
-    background-color: #E5E5E5;
+    background-color: $gray-6;
     .container {
         >.text-light {
             font-size: 1rem;
@@ -594,9 +594,13 @@ body {
             .content {
                 width: 500px;
                 padding-top: 100px;
-                .line-4 {
+                .line.line-4 {
                     margin-top: 54px;
                     margin-bottom: 0;
+                    .text-bold {
+                        font-size: 22px;
+                        padding-left: 30px;
+                    }
                 }
             }
         }
@@ -808,4 +812,4 @@ body {
     }
 }
 
-// sass --watch scss/pages/thay-camera.scss:css/thay-camera.css
+// sass --watch scss/pages/replace-camera.scss:css/replace-camera.css

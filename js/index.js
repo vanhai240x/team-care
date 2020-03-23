@@ -4,6 +4,8 @@ $(document).ready(() => {
         infinite: true,
         slidesToShow: 6,
         slidesToScroll: 6,
+        autoplay: true,
+        autoplaySpeed: 2000,
         responsive: [{
                 breakpoint: 1024,
                 settings: {

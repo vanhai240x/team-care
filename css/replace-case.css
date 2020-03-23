@@ -519,7 +519,7 @@ template {
 }
 .footer .after-sale {
   padding: 2rem 1rem;
-  background-color: #E5E5E5;
+  background-color: #F2F2F2;
 }
 .footer .after-sale .wrapper .title {
   font-weight: bold;
@@ -837,7 +837,7 @@ body {
 
 .banner {
   height: 500px;
-  background: url("/images/replace-screen/banner-bg.svg") center no-repeat;
+  background: url("/images/replace-case/banner-bg.jpg") center no-repeat;
   background-size: cover;
   display: flex;
   align-items: center;
@@ -867,11 +867,13 @@ body {
   font-size: 2rem;
   line-height: 38px;
   margin-bottom: 20px;
+  text-transform: uppercase;
 }
 .banner .wrapper .text-light {
   font-size: 1rem;
   line-height: 19px;
   margin-bottom: 20px;
+  max-width: 585px;
 }
 
 .useful {
@@ -909,69 +911,94 @@ body {
   margin-bottom: 0;
 }
 
-.step-select {
-  background-color: #F2F2F2;
+.banner-2 {
   padding: 1rem;
+  background-color: #666666;
 }
-.step-select .container {
+.banner-2 .bg-right {
+  display: none;
+}
+.banner-2 .container .content .line {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+.banner-2 .container .content .line .icon {
+  position: relative;
+  margin-right: 0.5rem;
+}
+.banner-2 .container .content .line .icon .border {
+  width: 18px;
+}
+.banner-2 .container .content .line .icon .tick {
+  width: 13px;
+  position: absolute;
+  right: -2px;
+}
+.banner-2 .container .content .line .context .text-light {
+  font-size: 1rem;
+  line-height: 19px;
+  color: #4F4F4F;
+  margin-top: -3px;
+}
+.banner-2 .container .content .line.line-4 .text-bold {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 26px;
+  color: #4F4F4F;
+  padding-left: 1rem;
+}
+
+.signal {
+  padding: 1rem;
+  background: #F2F2F2;
+}
+.signal .container .title-red-bold {
+  font-size: 22px;
+}
+.signal .container .title-red-bold::before {
+  width: 136px;
+}
+.signal .container .block-flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.signal .container .block-flex .item {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+.signal .container .block-flex .item .icon {
   position: relative;
 }
-.step-select .container .text-light {
+.signal .container .block-flex .item .icon .sub-icon {
+  position: absolute;
+  top: 6px;
+  left: 7px;
+}
+.signal .container .block-flex .item .text-bold {
+  font-weight: bold;
   font-size: 1rem;
   line-height: 19px;
   text-align: center;
   color: #4F4F4F;
 }
-.step-select .container .steps {
-  padding: 1rem 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
+.signal .container .wrapper-text {
+  text-align: center;
 }
-.step-select .container .steps .step {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.step-select .container .steps .step .wrapper {
-  width: 100px;
-  height: 100px;
-  background: url("/images/replace-screen/dot_circle.svg") center no-repeat;
-  background-size: contain;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 10px;
-}
-.step-select .container .steps .step .wrapper span {
-  font-weight: bold;
-  font-size: 3rem;
-  line-height: 77px;
-  color: #828282;
-}
-.step-select .container .steps .step .text-bold {
-  font-weight: bold;
-  font-size: 22px;
-  line-height: 26px;
+.signal .container .wrapper-text .text-light {
+  font-size: 1rem;
+  line-height: 19px;
   text-align: center;
   color: #4F4F4F;
-}
-.step-select .container .steps .step.step-1, .step-select .container .steps .step.step-2 {
-  margin-bottom: 2rem;
-}
-.step-select .container .steps .arrow {
-  width: 2.5rem;
-  height: 22px;
-  position: relative;
-  top: -1rem;
-  background: url("/images/replace-screen/arrow_right_red.png") right no-repeat;
-  transform: rotate(90deg);
-  -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
+  max-width: 585px;
+  margin: auto;
 }
 
 .service {
@@ -1063,6 +1090,7 @@ body {
   line-height: 19px;
   color: #4F4F4F;
   font-weight: normal;
+  width: 33.33%;
 }
 .service .container .line .content .wrapper-table .table tbody tr {
   height: 60px;
@@ -1070,7 +1098,7 @@ body {
   align-items: center;
 }
 .service .container .line .content .wrapper-table .table tbody tr td {
-  width: 50%;
+  width: 33.33%;
   font-size: 1rem;
   line-height: 19px;
   color: #4F4F4F;
@@ -1101,19 +1129,10 @@ body {
   background-size: 15px;
   margin-left: 10px;
 }
-.service .container .line.line-2 {
-  margin-top: 2rem;
-}
-.service .container .line.line-2 .image .img-1 {
-  float: left;
-}
-.service .container .line.line-2 .image .img-2 {
-  left: 46vw;
-}
 
 .commit {
   padding: 1rem;
-  background-color: #E5E5E5;
+  background-color: #F2F2F2;
 }
 .commit .container > .text-light {
   font-size: 1rem;
@@ -1292,51 +1311,49 @@ body {
     line-height: 48px;
   }
 
-  .step-select {
-    padding: 70px 1rem;
-  }
-  .step-select .container .wrapper-text {
+  .banner-2 {
+    height: 525px;
     position: relative;
   }
-  .step-select .container .wrapper-text .text-light {
-    max-width: 585px;
+  .banner-2 .bg-right {
+    display: block;
+    width: calc(100% - 630px);
+    max-width: 1048px;
+    height: 100%;
+    background: url("/images/replace-case/banner-2-bg.png") right no-repeat;
+    background-size: 1048px;
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 0;
   }
-  .step-select .container .steps {
-    flex-direction: row;
-    padding: 60px 0;
+  .banner-2 .container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
   }
-  .step-select .container .steps .step .wrapper {
-    width: 138px;
-    height: 138px;
-    margin-bottom: 25px;
+  .banner-2 .container .content {
+    width: 500px;
+    padding-top: 100px;
   }
-  .step-select .container .steps .step .wrapper span {
-    font-size: 64px;
-  }
-  .step-select .container .steps .step.step-1, .step-select .container .steps .step.step-2 {
+  .banner-2 .container .content .line.line-4 {
+    margin-top: 54px;
     margin-bottom: 0;
   }
-  .step-select .container .steps .arrow {
-    max-width: 175px;
-    width: 15%;
-    top: -2rem;
-    transform: rotate(0);
-    -webkit-transform: rotate(0);
-    -moz-transform: rotate(0);
-    -ms-transform: rotate(0);
-    -o-transform: rotate(0);
+  .banner-2 .container .content .line.line-4 .text-bold {
+    font-size: 22px;
+    padding-left: 30px;
+  }
+
+  .signal {
+    padding: 90px 16px 100px;
+  }
+  .signal .container .block-flex {
+    margin-bottom: 50px;
   }
 
   .service {
-    padding: 110px 16px 200px;
+    padding: 120px 16px;
     position: relative;
   }
   .service::before {
@@ -1347,20 +1364,8 @@ body {
     background: url("/images/replace-screen/service-sub-left.svg") left no-repeat;
     background-size: contain;
     position: absolute;
-    top: -32px;
+    top: -20px;
     left: 0;
-    z-index: -1;
-  }
-  .service::after {
-    content: "";
-    display: block;
-    width: 200px;
-    height: 300px;
-    background: url("/images/replace-screen/service-sub-2.svg") right no-repeat;
-    background-size: contain;
-    position: absolute;
-    top: 44%;
-    right: 0;
     z-index: -1;
   }
   .service .container .line {
@@ -1381,13 +1386,6 @@ body {
     flex-direction: row-reverse;
   }
   .service .container .line.line-1 .image .img-2 {
-    top: -10vw;
-  }
-  .service .container .line.line-2 {
-    margin-top: 150px;
-  }
-  .service .container .line.line-2 .image .img-2 {
-    left: 24vw;
     top: -10vw;
   }
 
@@ -1510,12 +1508,22 @@ body {
     padding: 0;
   }
 
-  .step-select {
-    padding: 70px 0;
+  .banner-2 {
+    padding: 15px 0;
+  }
+
+  .signal {
+    padding: 90px 0 100px;
+  }
+  .signal .container .block-flex {
+    justify-content: space-between;
+  }
+  .signal .container .block-flex .icon {
+    margin-bottom: 20px;
   }
 
   .service {
-    padding: 110px 0 200px;
+    padding: 126px 0;
   }
   .service .container .line.line-1 .image .img-2 {
     top: -130px;
@@ -1538,4 +1546,4 @@ body {
   }
 }
 
-/*# sourceMappingURL=thay-man-hinh.css.map */
+/*# sourceMappingURL=replace-case.css.map */
