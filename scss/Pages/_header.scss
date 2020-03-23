@@ -28,7 +28,7 @@
             background-color: $white;
             float: right;
             position: relative;
-            padding: 60px 20px 25px 20px;
+            padding: 30px 20px 35px 20px;
             @include flex(space-between, unset);
             flex-direction: column;
             .x-img {
@@ -51,7 +51,7 @@
                         color: $gray-3;
                         padding: 0;
                         text-transform: uppercase;
-                        margin-bottom: 35px;
+                        margin-bottom: 28px;
                         &.active {
                             color: $red;
                         }

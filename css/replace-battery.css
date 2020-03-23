@@ -231,7 +231,7 @@ template {
   background-color: #FFFFFF;
   float: right;
   position: relative;
-  padding: 60px 20px 25px 20px;
+  padding: 30px 20px 35px 20px;
   display: flex;
   justify-content: space-between;
   align-items: unset;
@@ -259,7 +259,7 @@ template {
   color: #828282;
   padding: 0;
   text-transform: uppercase;
-  margin-bottom: 35px;
+  margin-bottom: 28px;
 }
 .header-mobile .filter .toggle-menu .navbar ul .nav-link.active {
   color: #F90729;
@@ -631,7 +631,7 @@ template {
   text-decoration: none;
 }
 .footer .company .line.line-3 {
-  justify-content: flex-start;
+  justify-content: center;
 }
 .footer .company .line.line-3 .icon {
   margin-left: 2rem;
@@ -764,6 +764,7 @@ template {
     max-width: 180px;
     width: 20%;
     justify-content: space-between;
+    align-items: flex-start;
   }
   .footer .company .line.line-3 .icon {
     margin-left: 0;
@@ -775,6 +776,11 @@ template {
   }
   .footer .company .line.line-1 .left img, .footer .company .line.line-1 .commit .container .ticket .right img, .commit .container .ticket .footer .company .line.line-1 .right img {
     margin-right: 42px;
+  }
+}
+@media (min-width: 1200px) {
+  .footer .after-sale .bg-left {
+    width: calc(100% - ((100% - 1200px) / 2 + 460px));
   }
 }
 .btn-border-red {
@@ -1266,7 +1272,7 @@ body {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background-color: #9e9e9e;
+  background-color: #E0E0E0;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
