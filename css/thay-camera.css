@@ -950,6 +950,49 @@ body {
   padding-left: 30px;
 }
 
+.signal {
+  padding: 1rem;
+  background: #F2F2F2;
+}
+.signal .container .title-red-bold {
+  font-size: 22px;
+}
+.signal .container .title-red-bold::before {
+  width: 136px;
+}
+.signal .container .block-flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.signal .container .block-flex .item {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+.signal .container .block-flex .item .text-bold {
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 19px;
+  text-align: center;
+  color: #4F4F4F;
+}
+.signal .container .wrapper-text {
+  text-align: center;
+}
+.signal .container .wrapper-text .text-light {
+  font-size: 1rem;
+  line-height: 19px;
+  text-align: center;
+  color: #4F4F4F;
+  max-width: 585px;
+  margin: auto;
+}
+
 .service {
   padding: 1rem;
 }
@@ -1039,6 +1082,7 @@ body {
   line-height: 19px;
   color: #4F4F4F;
   font-weight: normal;
+  width: 33.33%;
 }
 .service .container .line .content .wrapper-table .table tbody tr {
   height: 60px;
@@ -1046,7 +1090,7 @@ body {
   align-items: center;
 }
 .service .container .line .content .wrapper-table .table tbody tr td {
-  width: 50%;
+  width: 33.33%;
   font-size: 1rem;
   line-height: 19px;
   color: #4F4F4F;
@@ -1076,15 +1120,6 @@ body {
   background: url("/images/replace-screen/arrow_down_red.svg") center no-repeat;
   background-size: 15px;
   margin-left: 10px;
-}
-.service .container .line.line-2 {
-  margin-top: 2rem;
-}
-.service .container .line.line-2 .image .img-1 {
-  float: left;
-}
-.service .container .line.line-2 .image .img-2 {
-  left: 46vw;
 }
 
 .commit {
@@ -1298,8 +1333,15 @@ body {
     margin-bottom: 0;
   }
 
+  .signal {
+    padding: 90px 16px 100px;
+  }
+  .signal .container .block-flex {
+    margin-bottom: 50px;
+  }
+
   .service {
-    padding: 110px 16px 200px;
+    padding: 120px 16px;
     position: relative;
   }
   .service::before {
@@ -1310,20 +1352,8 @@ body {
     background: url("/images/replace-screen/service-sub-left.svg") left no-repeat;
     background-size: contain;
     position: absolute;
-    top: -32px;
+    top: -20px;
     left: 0;
-    z-index: -1;
-  }
-  .service::after {
-    content: "";
-    display: block;
-    width: 200px;
-    height: 300px;
-    background: url("/images/replace-screen/service-sub-2.svg") right no-repeat;
-    background-size: contain;
-    position: absolute;
-    top: 44%;
-    right: 0;
     z-index: -1;
   }
   .service .container .line {
@@ -1344,13 +1374,6 @@ body {
     flex-direction: row-reverse;
   }
   .service .container .line.line-1 .image .img-2 {
-    top: -10vw;
-  }
-  .service .container .line.line-2 {
-    margin-top: 150px;
-  }
-  .service .container .line.line-2 .image .img-2 {
-    left: 24vw;
     top: -10vw;
   }
 
@@ -1477,8 +1500,18 @@ body {
     padding: 15px 0;
   }
 
+  .signal {
+    padding: 90px 0 100px;
+  }
+  .signal .container .block-flex {
+    justify-content: space-between;
+  }
+  .signal .container .block-flex .icon {
+    margin-bottom: 20px;
+  }
+
   .service {
-    padding: 110px 0 200px;
+    padding: 126px 0;
   }
   .service .container .line.line-1 .image .img-2 {
     top: -130px;

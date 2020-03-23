@@ -183,6 +183,52 @@ body {
     }
 }
 
+.signal {
+    padding: 1rem;
+    background: $gray-6;
+    .container {
+        .title-red-bold {
+            font-size: 22px;
+            &::before {
+                width: 136px;
+            }
+        }
+        .block-flex {
+            @include flex(space-around,
+            flex-start);
+            flex-wrap: wrap;
+            .item {
+                width: 200px;
+                @include flex(center,
+                center);
+                flex-direction: column;
+                margin-bottom: 1rem;
+                .icon {
+                    img {}
+                }
+                .text-bold {
+                    font-weight: bold;
+                    font-size: 1rem;
+                    line-height: 19px;
+                    text-align: center;
+                    color: $gray-2;
+                }
+            }
+        }
+        .wrapper-text {
+            text-align: center;
+            .text-light {
+                font-size: 1rem;
+                line-height: 19px;
+                text-align: center;
+                color: $gray-2;
+                max-width: 585px;
+                margin: auto;
+            }
+        }
+    }
+}
+
 .service {
     padding: 1rem;
     .container {
@@ -270,6 +316,7 @@ body {
                                     line-height: 19px;
                                     color: $gray-2;
                                     font-weight: normal;
+                                    width: 33.33%;
                                 }
                             }
                         }
@@ -279,7 +326,7 @@ body {
                                 display: flex;
                                 align-items: center;
                                 td {
-                                    width: 50%;
+                                    width: 33.33%;
                                     font-size: 1rem;
                                     line-height: 19px;
                                     color: $gray-2;
@@ -312,17 +359,6 @@ body {
                                 margin-left: 10px;
                             }
                         }
-                    }
-                }
-            }
-            &.line-2 {
-                margin-top: 2rem;
-                .image {
-                    .img-1 {
-                        float: left;
-                    }
-                    .img-2 {
-                        left: 46vw;
                     }
                 }
             }
@@ -565,8 +601,16 @@ body {
             }
         }
     }
+    .signal {
+        padding: 90px 16px 100px;
+        .container {
+            .block-flex {
+                margin-bottom: 50px;
+            }
+        }
+    }
     .service {
-        padding: 110px 16px 200px;
+        padding: 120px 16px;
         position: relative;
         &::before {
             content: '';
@@ -576,20 +620,8 @@ body {
             background: url('/images/replace-screen/service-sub-left.svg') left no-repeat;
             background-size: contain;
             position: absolute;
-            top: -32px;
+            top: -20px;
             left: 0;
-            z-index: -1;
-        }
-        &::after {
-            content: '';
-            display: block;
-            width: 200px;
-            height: 300px;
-            background: url('/images/replace-screen/service-sub-2.svg') right no-repeat;
-            background-size: contain;
-            position: absolute;
-            top: 44%;
-            right: 0;
             z-index: -1;
         }
         .container {
@@ -611,15 +643,6 @@ body {
                     flex-direction: row-reverse;
                     .image {
                         .img-2 {
-                            top: -10vw;
-                        }
-                    }
-                }
-                &.line-2 {
-                    margin-top: 150px;
-                    .image {
-                        .img-2 {
-                            left: 24vw;
                             top: -10vw;
                         }
                     }
@@ -751,8 +774,19 @@ body {
     .banner-2 {
         padding: 15px 0;
     }
+    .signal {
+        padding: 90px 0 100px;
+        .container {
+            .block-flex {
+                justify-content: space-between;
+                .icon {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
     .service {
-        padding: 110px 0 200px;
+        padding: 126px 0;
         .container .line {
             &.line-1 .image .img-2 {
                 top: -130px;
