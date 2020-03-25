@@ -816,7 +816,7 @@ body {
   margin: auto;
 }
 
-.banner {
+.index-page .banner {
   height: 500px;
   background: url("/images/banner-home.svg") center no-repeat;
   background-size: cover;
@@ -824,7 +824,7 @@ body {
   align-items: center;
   padding: 0;
 }
-.banner .wrapper {
+.index-page .banner .wrapper {
   background: rgba(0, 0, 0, 0.5);
   width: 100%;
   height: 414px;
@@ -835,7 +835,7 @@ body {
   flex-direction: column;
   text-align: center;
 }
-.banner .wrapper .brand {
+.index-page .banner .wrapper .brand {
   font-weight: bold;
   font-size: 1.5rem;
   line-height: 29px;
@@ -843,44 +843,43 @@ body {
   text-transform: uppercase;
   margin-bottom: 20px;
 }
-.banner .wrapper .text-bold {
+.index-page .banner .wrapper .text-bold {
   font-weight: 900;
   font-size: 2rem;
   line-height: 38px;
   margin-bottom: 20px;
 }
-.banner .wrapper .text-light {
+.index-page .banner .wrapper .text-light {
   font-size: 1rem;
   line-height: 19px;
   margin-bottom: 20px;
 }
-
-.slider {
+.index-page .slider {
   height: 130px;
   background-color: #FFFFFF;
 }
-.slider .slick-list {
+.index-page .slider .slick-list {
   text-align: center;
   margin-top: 1rem;
 }
-.slider .slick-list .image {
+.index-page .slider .slick-list .image {
   display: inline-block;
 }
-.slider .slick-list .brand-name {
+.index-page .slider .slick-list .brand-name {
   font-size: 1rem;
   line-height: 26px;
   color: #828282;
 }
-.slider .slick-arrow {
+.index-page .slider .slick-arrow {
   display: none !important;
 }
-.slider .slick-dots {
+.index-page .slider .slick-dots {
   display: flex;
   justify-content: center;
   align-items: center;
   bottom: -16px;
 }
-.slider .slick-dots li {
+.index-page .slider .slick-dots li {
   width: 8px;
   height: 8px;
   border-radius: 50%;
@@ -890,20 +889,19 @@ body {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
-.slider .slick-dots li.slick-active {
+.index-page .slider .slick-dots li.slick-active {
   width: 1rem;
   height: 1rem;
   background-color: #F90729;
 }
-.slider .slick-dots li button::before {
+.index-page .slider .slick-dots li button::before {
   content: none;
 }
-
-.service {
+.index-page .service {
   background-color: #F2F2F2;
   padding: 2rem 0;
 }
-.service .title h3 {
+.index-page .service .title h3 {
   text-align: center;
   font-weight: bold;
   font-size: 1.5rem;
@@ -913,7 +911,7 @@ body {
   margin-bottom: 2rem;
   position: relative;
 }
-.service .title h3::before {
+.index-page .service .title h3::before {
   content: "";
   width: 175px;
   height: 4px;
@@ -927,19 +925,19 @@ body {
   -o-transform: translateX(-50%);
   bottom: -15px;
 }
-.service .line {
+.index-page .service .line {
   display: flex;
   margin-bottom: 1rem;
   flex-direction: column-reverse;
 }
-.service .line .img {
+.index-page .service .line .img {
   position: relative;
 }
-.service .line .img img {
+.index-page .service .line .img img {
   width: 100%;
   height: 100%;
 }
-.service .line .img::after {
+.index-page .service .line .img::after {
   content: "";
   width: 64px;
   height: 64px;
@@ -956,27 +954,27 @@ body {
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
 }
-.service .line .content {
+.index-page .service .line .content {
   background-color: #FFFFFF;
   padding: 1rem;
 }
-.service .line .content .text-bold {
+.index-page .service .line .content .text-bold {
   font-weight: bold;
   font-size: 22px;
   line-height: 26px;
   color: #4F4F4F;
   margin-bottom: 1rem;
 }
-.service .line .content .text-light {
+.index-page .service .line .content .text-light {
   font-size: 1rem;
   line-height: 19px;
   color: #4F4F4F !important;
   margin-bottom: 1rem;
 }
-.service .line .content a {
+.index-page .service .line .content a {
   width: 100%;
 }
-.service .line .content .btn {
+.index-page .service .line .content .btn {
   border-radius: 30px;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
@@ -991,81 +989,79 @@ body {
   -ms-transform: translateX(-50%);
   -o-transform: translateX(-50%);
 }
-.service .line.line-1 .img::after {
+.index-page .service .line.line-1 .img::after {
   background-image: url("/images/service-sub-1.svg");
 }
-.service .line.line-2 {
+.index-page .service .line.line-2 {
   flex-direction: column;
 }
-.service .line.line-2 .img::after {
+.index-page .service .line.line-2 .img::after {
   background-image: url("/images/service-sub-2.svg");
 }
-.service .line.line-3 .img::after {
+.index-page .service .line.line-3 .img::after {
   background-image: url("/images/service-sub-3.svg");
 }
-.service .line.line-4 {
+.index-page .service .line.line-4 {
   flex-direction: column;
 }
-.service .line.line-4 .img::after {
+.index-page .service .line.line-4 .img::after {
   background-image: url("/images/service-sub-4.svg");
 }
 
 @media (min-width: 768px) {
-  .banner .wrapper .brand {
+  .index-page .banner .wrapper .brand {
     font-size: 1.75rem;
   }
-  .banner .wrapper .text-bold {
+  .index-page .banner .wrapper .text-bold {
     font-size: 2.5rem;
   }
-
-  .slider {
+  .index-page .slider {
     height: 262px;
     margin-bottom: 0 !important;
   }
-  .slider .slick-list {
+  .index-page .slider .slick-list {
     margin-top: 0;
     padding-top: 42px;
   }
-  .slider .slick-list .brand-name {
+  .index-page .slider .slick-list .brand-name {
     font-size: 22px;
   }
-  .slider .slick-dots {
+  .index-page .slider .slick-dots {
     bottom: 40px;
   }
-
-  .service {
+  .index-page .service {
     padding: 90px 0 100px;
   }
-  .service .title {
+  .index-page .service .title {
     margin-bottom: 97px;
   }
-  .service .title h3 {
+  .index-page .service .title h3 {
     font-size: 2rem;
   }
-  .service .title h3::before {
+  .index-page .service .title h3::before {
     bottom: -25px;
   }
-  .service .line {
+  .index-page .service .line {
     flex-direction: row;
     margin-bottom: 45px;
   }
-  .service .line .img {
+  .index-page .service .line .img {
     overflow: hidden;
   }
-  .service .line .img img {
+  .index-page .service .line .img img {
     min-width: 100%;
     width: max-content;
     height: 100%;
   }
-  .service .line .content {
+  .index-page .service .line .content {
     width: 50%;
     min-height: 300px;
     position: relative;
   }
-  .service .line .content a {
+  .index-page .service .line .content a {
     width: max-content;
   }
-  .service .line .content .wrapper {
+  .index-page .service .line .content .wrapper {
     padding: 1rem;
     max-width: 412px;
     width: 100%;
@@ -1078,18 +1074,18 @@ body {
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
   }
-  .service .line .content .wrapper .text-light {
+  .index-page .service .line .content .wrapper .text-light {
     margin-bottom: 45px;
   }
-  .service .line .img {
+  .index-page .service .line .img {
     width: 50%;
   }
-  .service .line.line-2, .service .line.line-4 {
+  .index-page .service .line.line-2, .index-page .service .line.line-4 {
     flex-direction: row;
   }
 }
 @media (min-width: 1200px) {
-  .banner {
+  .index-page .banner {
     height: 850px;
   }
 }

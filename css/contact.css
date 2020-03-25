@@ -854,19 +854,19 @@ body {
   margin: auto;
 }
 
-.breadcrumb {
+.contact-page .breadcrumb {
   height: 70px;
   background: url("/images/news/breadcrumb-bg.jpg") center no-repeat;
   background-size: cover;
   padding: 1rem;
 }
-.breadcrumb .container {
+.contact-page .breadcrumb .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 100%;
 }
-.breadcrumb .container .left {
+.contact-page .breadcrumb .container .left {
   font-family: Lato;
   font-style: normal;
   font-weight: bold;
@@ -874,15 +874,15 @@ body {
   line-height: 38px;
   color: #FFFFFF;
 }
-.breadcrumb .container .right {
+.contact-page .breadcrumb .container .right {
   list-style: none;
 }
-.breadcrumb .container .right li {
+.contact-page .breadcrumb .container .right li {
   display: inline;
   font-size: 18px;
   color: #FFFFFF;
 }
-.breadcrumb .container .right li a {
+.contact-page .breadcrumb .container .right li a {
   color: #FFFFFF;
   transition: all 0.3s;
   -webkit-transition: all 0.3s;
@@ -890,20 +890,19 @@ body {
   -ms-transition: all 0.3s;
   -o-transition: all 0.3s;
 }
-.breadcrumb .container .right li a:hover {
+.contact-page .breadcrumb .container .right li a:hover {
   color: #F90729;
 }
-.breadcrumb .container .right li + li:before {
+.contact-page .breadcrumb .container .right li + li:before {
   padding: 2px;
   color: #FFFFFF;
   content: "/ ";
 }
-
-.contact {
+.contact-page .contact {
   padding: 2rem 1rem;
   background-color: #F2F2F2;
 }
-.contact .container .text-red {
+.contact-page .contact .container .text-red {
   font-size: 1.5rem;
   margin-bottom: 2rem;
   line-height: 38px;
@@ -911,42 +910,42 @@ body {
   font-weight: bold;
   color: #F90729;
 }
-.contact .container .wrapper .infomation .left {
+.contact-page .contact .container .wrapper .infomation .left {
   text-align: center;
   margin-bottom: 1rem;
 }
-.contact .container .wrapper .infomation .right {
+.contact-page .contact .container .wrapper .infomation .right {
   width: max-content;
   margin: auto;
 }
-.contact .container .wrapper .infomation .right .item {
+.contact-page .contact .container .wrapper .infomation .right .item {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   margin-bottom: 1rem;
 }
-.contact .container .wrapper .infomation .right .item .context {
+.contact-page .contact .container .wrapper .infomation .right .item .context {
   margin-left: 10px;
 }
-.contact .container .wrapper .infomation .right .item .context--bold {
+.contact-page .contact .container .wrapper .infomation .right .item .context--bold {
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;
   color: #4F4F4F;
   margin-bottom: 6px;
 }
-.contact .container .wrapper .infomation .right .item .context--light, .contact .container .wrapper .infomation .right .item .context--light a {
+.contact-page .contact .container .wrapper .infomation .right .item .context--light, .contact-page .contact .container .wrapper .infomation .right .item .context--light a {
   font-size: 1rem;
   line-height: 22px;
   color: #828282;
 }
-.contact .container .wrapper .form .text-light {
+.contact-page .contact .container .wrapper .form .text-light {
   font-size: 1rem;
   line-height: 19px;
   color: #4F4F4F;
   margin-bottom: 0.5rem;
 }
-.contact .container .wrapper .form input {
+.contact-page .contact .container .wrapper .form input {
   width: 100%;
   height: 50px;
   border: 1px solid #4F4F4F;
@@ -954,7 +953,7 @@ body {
   margin-bottom: 1rem;
   padding: 0 0.5rem;
 }
-.contact .container .wrapper .form textarea {
+.contact-page .contact .container .wrapper .form textarea {
   width: 100%;
   height: 160px;
   border: 1px solid #4F4F4F;
@@ -963,10 +962,10 @@ body {
   padding: 0.5rem;
   resize: none;
 }
-.contact .container .wrapper .form .wrapper-button {
+.contact-page .contact .container .wrapper .form .wrapper-button {
   text-align: center;
 }
-.contact .container .wrapper .form .wrapper-button .btn-red {
+.contact-page .contact .container .wrapper .form .wrapper-button .btn-red {
   width: 100%;
   height: 50px;
   max-width: 240px;
@@ -987,60 +986,58 @@ body {
   -ms-transition: all 0.4s;
   -o-transition: all 0.4s;
 }
-.contact .container .wrapper .form .wrapper-button .btn-red:hover {
+.contact-page .contact .container .wrapper .form .wrapper-button .btn-red:hover {
   color: #F90729;
   background: none;
   border: 2px solid #F90729;
 }
 
 @media (min-width: 768px) {
-  .title-red-bold {
+  .contact-page .title-red-bold {
     font-size: 2rem;
     margin-bottom: 57px;
   }
-  .title-red-bold::before {
+  .contact-page .title-red-bold::before {
     bottom: -25px;
   }
-
-  .breadcrumb {
+  .contact-page .breadcrumb {
     height: 157px;
   }
-  .breadcrumb .container .left {
+  .contact-page .breadcrumb .container .left {
     font-size: 2rem;
   }
-  .breadcrumb .container .right li {
+  .contact-page .breadcrumb .container .right li {
     font-size: 22px;
   }
-
-  .contact {
+  .contact-page .contact {
     padding: 86px 16px 77px;
   }
-  .contact .container .text-red {
+  .contact-page .contact .container .text-red {
     font-size: 2rem;
     margin-bottom: 80px;
   }
-  .contact .container .wrapper {
+  .contact-page .contact .container .wrapper {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
   }
-  .contact .container .wrapper .infomation {
+  .contact-page .contact .container .wrapper .infomation {
     width: 50%;
   }
-  .contact .container .wrapper .form {
+  .contact-page .contact .container .wrapper .form {
     width: 50%;
     padding-left: 1rem;
   }
-  .contact .container .wrapper .form input {
+  .contact-page .contact .container .wrapper .form input {
     margin-bottom: 22px;
   }
-  .contact .container .wrapper .form textarea {
+  .contact-page .contact .container .wrapper .form textarea {
     margin-bottom: 2rem;
   }
-  .contact .container .wrapper .form .wrapper-button {
+  .contact-page .contact .container .wrapper .form .wrapper-button {
     text-align: right;
   }
-  .contact .container .wrapper .form .wrapper-button .btn-red {
+  .contact-page .contact .container .wrapper .form .wrapper-button .btn-red {
     max-width: 380px;
     height: 60px;
     font-size: 22px;

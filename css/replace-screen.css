@@ -496,7 +496,7 @@ template {
   align-items: center;
   flex-direction: column;
 }
-.footer .guarantee .bottom .container .left p, .footer .guarantee .bottom .commit .container .ticket .right p, .commit .footer .guarantee .bottom .container .ticket .right p {
+.footer .guarantee .bottom .container .left p, .footer .guarantee .bottom .replace-screen-page .commit .container .ticket .right p, .replace-screen-page .commit .footer .guarantee .bottom .container .ticket .right p {
   font-weight: bold;
   font-size: 1.5rem;
   line-height: 38px;
@@ -743,7 +743,7 @@ template {
     height: 270px;
     margin: auto;
   }
-  .footer .company .line.line-1 .left img, .footer .company .line.line-1 .commit .container .ticket .right img, .commit .container .ticket .footer .company .line.line-1 .right img {
+  .footer .company .line.line-1 .left img, .footer .company .line.line-1 .replace-screen-page .commit .container .ticket .right img, .replace-screen-page .commit .container .ticket .footer .company .line.line-1 .right img {
     margin-right: 12px;
   }
   .footer .company .line.line-2 {
@@ -774,7 +774,7 @@ template {
   .footer .company {
     padding: 54px 0 90px;
   }
-  .footer .company .line.line-1 .left img, .footer .company .line.line-1 .commit .container .ticket .right img, .commit .container .ticket .footer .company .line.line-1 .right img {
+  .footer .company .line.line-1 .left img, .footer .company .line.line-1 .replace-screen-page .commit .container .ticket .right img, .replace-screen-page .commit .container .ticket .footer .company .line.line-1 .right img {
     margin-right: 42px;
   }
 }
@@ -841,7 +841,7 @@ body {
   margin: auto;
 }
 
-.banner {
+.replace-screen-page .banner {
   height: 500px;
   background: url("/images/replace-screen/banner-bg.svg") center no-repeat;
   background-size: cover;
@@ -849,7 +849,7 @@ body {
   align-items: center;
   padding: 0;
 }
-.banner .wrapper {
+.replace-screen-page .banner .wrapper {
   background: rgba(0, 0, 0, 0.5);
   width: 100%;
   height: 414px;
@@ -860,7 +860,7 @@ body {
   flex-direction: column;
   text-align: center;
 }
-.banner .wrapper .brand {
+.replace-screen-page .banner .wrapper .brand {
   font-weight: bold;
   font-size: 1.5rem;
   line-height: 29px;
@@ -868,80 +868,78 @@ body {
   text-transform: uppercase;
   margin-bottom: 20px;
 }
-.banner .wrapper .text-bold {
+.replace-screen-page .banner .wrapper .text-bold {
   font-weight: 900;
   font-size: 2rem;
   line-height: 38px;
   margin-bottom: 20px;
 }
-.banner .wrapper .text-light {
+.replace-screen-page .banner .wrapper .text-light {
   font-size: 1rem;
   line-height: 19px;
   margin-bottom: 20px;
 }
-
-.useful {
+.replace-screen-page .useful {
   padding: 2rem 0;
 }
-.useful .container {
+.replace-screen-page .useful .container {
   width: max-content;
 }
-.useful .container .line {
+.replace-screen-page .useful .container .line {
   width: max-content;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 2rem;
 }
-.useful .container .line .img img {
+.replace-screen-page .useful .container .line .img img {
   width: 40px;
 }
-.useful .container .line .context {
+.replace-screen-page .useful .container .line .context {
   padding-left: 10px;
 }
-.useful .container .line .context .text-red-bold {
+.replace-screen-page .useful .container .line .context .text-red-bold {
   font-weight: bold;
   font-size: 20px;
   line-height: 26px;
   color: #F90729;
   margin-bottom: 3px;
 }
-.useful .container .line .context .text-light {
+.replace-screen-page .useful .container .line .context .text-light {
   font-size: 14px;
   line-height: 19px;
   color: #4F4F4F;
 }
-.useful .container .line.line-3 {
+.replace-screen-page .useful .container .line.line-3 {
   margin-bottom: 0;
 }
-
-.step-select {
+.replace-screen-page .step-select {
   background-color: #F2F2F2;
   padding: 1rem;
 }
-.step-select .container {
+.replace-screen-page .step-select .container {
   position: relative;
 }
-.step-select .container .text-light {
+.replace-screen-page .step-select .container .text-light {
   font-size: 1rem;
   line-height: 19px;
   text-align: center;
   color: #4F4F4F;
 }
-.step-select .container .steps {
+.replace-screen-page .step-select .container .steps {
   padding: 1rem 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
 }
-.step-select .container .steps .step {
+.replace-screen-page .step-select .container .steps .step {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.step-select .container .steps .step .wrapper {
+.replace-screen-page .step-select .container .steps .step .wrapper {
   width: 100px;
   height: 100px;
   background: url("/images/replace-screen/dot_circle.svg") center no-repeat;
@@ -951,23 +949,23 @@ body {
   align-items: center;
   margin-bottom: 10px;
 }
-.step-select .container .steps .step .wrapper span {
+.replace-screen-page .step-select .container .steps .step .wrapper span {
   font-weight: bold;
   font-size: 3rem;
   line-height: 77px;
   color: #828282;
 }
-.step-select .container .steps .step .text-bold {
+.replace-screen-page .step-select .container .steps .step .text-bold {
   font-weight: bold;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
   color: #4F4F4F;
 }
-.step-select .container .steps .step.step-1, .step-select .container .steps .step.step-2 {
+.replace-screen-page .step-select .container .steps .step.step-1, .replace-screen-page .step-select .container .steps .step.step-2 {
   margin-bottom: 2rem;
 }
-.step-select .container .steps .arrow {
+.replace-screen-page .step-select .container .steps .arrow {
   width: 2.5rem;
   height: 22px;
   position: relative;
@@ -979,28 +977,27 @@ body {
   -ms-transform: rotate(90deg);
   -o-transform: rotate(90deg);
 }
-
-.service {
+.replace-screen-page .service {
   padding: 1rem;
 }
-.service .container .line .image {
+.replace-screen-page .service .container .line .image {
   margin-bottom: -15vw;
 }
-.service .container .line .image .img-1 {
+.replace-screen-page .service .container .line .image .img-1 {
   width: 82%;
   max-width: 481px;
   float: right;
 }
-.service .container .line .image .img-2 {
+.replace-screen-page .service .container .line .image .img-2 {
   width: 47%;
   max-width: 278px;
   position: relative;
   top: -19vw;
 }
-.service .container .line .content .title-red-bold {
+.replace-screen-page .service .container .line .content .title-red-bold {
   text-align: left;
 }
-.service .container .line .content .title-red-bold::before {
+.replace-screen-page .service .container .line .content .title-red-bold::before {
   left: 0;
   transform: translateX(0);
   -webkit-transform: translateX(0);
@@ -1008,25 +1005,25 @@ body {
   -ms-transform: translateX(0);
   -o-transform: translateX(0);
 }
-.service .container .line .content .text-light {
+.replace-screen-page .service .container .line .content .text-light {
   font-size: 1rem;
   line-height: 19px;
   color: #4F4F4F;
   margin-bottom: 12px;
 }
-.service .container .line .content .select-box {
+.replace-screen-page .service .container .line .content .select-box {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 30px;
 }
-.service .container .line .content .select-box .text-red-small {
+.replace-screen-page .service .container .line .content .select-box .text-red-small {
   font-weight: bold;
   font-size: 20px;
   line-height: 26px;
   color: #F90729;
 }
-.service .container .line .content .select-box .select {
+.replace-screen-page .service .container .line .content .select-box .select {
   max-width: 276px;
   width: 60%;
   height: 65px;
@@ -1044,19 +1041,19 @@ body {
   text-indent: 1px;
   text-overflow: "";
 }
-.service .container .line .content .select-box .select::-ms-expand {
+.replace-screen-page .service .container .line .content .select-box .select::-ms-expand {
   display: none;
 }
-.service .container .line .content .wrapper-table {
+.replace-screen-page .service .container .line .content .wrapper-table {
   background: #FFFFFF;
   border: 1px solid #EEEEEE;
   box-sizing: border-box;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
 }
-.service .container .line .content .wrapper-table .table {
+.replace-screen-page .service .container .line .content .wrapper-table .table {
   width: 100%;
 }
-.service .container .line .content .wrapper-table .table thead tr {
+.replace-screen-page .service .container .line .content .wrapper-table .table thead tr {
   width: 100%;
   height: 60px;
   display: flex;
@@ -1064,33 +1061,33 @@ body {
   align-items: center;
   margin-bottom: 22px;
 }
-.service .container .line .content .wrapper-table .table thead tr th {
+.replace-screen-page .service .container .line .content .wrapper-table .table thead tr th {
   font-size: 1rem;
   line-height: 19px;
   color: #4F4F4F;
   font-weight: normal;
 }
-.service .container .line .content .wrapper-table .table tbody tr {
+.replace-screen-page .service .container .line .content .wrapper-table .table tbody tr {
   height: 60px;
   display: flex;
   align-items: center;
 }
-.service .container .line .content .wrapper-table .table tbody tr td {
+.replace-screen-page .service .container .line .content .wrapper-table .table tbody tr td {
   width: 50%;
   font-size: 1rem;
   line-height: 19px;
   color: #4F4F4F;
   text-align: center;
 }
-.service .container .line .content .wrapper-table .table tbody tr:nth-child(2n+1) {
+.replace-screen-page .service .container .line .content .wrapper-table .table tbody tr:nth-child(2n+1) {
   background-color: #F2F2F2;
 }
-.service .container .line .content .wrapper-table .wrapper-button {
+.replace-screen-page .service .container .line .content .wrapper-table .wrapper-button {
   margin: 30px auto;
   width: 100%;
   text-align: center;
 }
-.service .container .line .content .wrapper-table .wrapper-button .btn-view-more {
+.replace-screen-page .service .container .line .content .wrapper-table .wrapper-button .btn-view-more {
   font-weight: bold;
   font-size: 1rem;
   line-height: 19px;
@@ -1098,7 +1095,7 @@ body {
   border: none;
   background: none;
 }
-.service .container .line .content .wrapper-table .wrapper-button .btn-view-more::after {
+.replace-screen-page .service .container .line .content .wrapper-table .wrapper-button .btn-view-more::after {
   content: "";
   display: inline-block;
   width: 15px;
@@ -1107,57 +1104,56 @@ body {
   background-size: 15px;
   margin-left: 10px;
 }
-.service .container .line.line-2 {
+.replace-screen-page .service .container .line.line-2 {
   margin-top: 2rem;
 }
-.service .container .line.line-2 .image .img-1 {
+.replace-screen-page .service .container .line.line-2 .image .img-1 {
   float: left;
 }
-.service .container .line.line-2 .image .img-2 {
+.replace-screen-page .service .container .line.line-2 .image .img-2 {
   left: 46vw;
 }
-
-.commit {
+.replace-screen-page .commit {
   padding: 1rem;
   background-color: #F2F2F2;
 }
-.commit .container > .text-light {
+.replace-screen-page .commit .container > .text-light {
   font-size: 1rem;
   line-height: 19px;
   text-align: center;
   color: #4F4F4F;
   margin-bottom: 1rem;
 }
-.commit .container .ticket .left .line, .commit .container .ticket .right .line {
+.replace-screen-page .commit .container .ticket .left .line, .replace-screen-page .commit .container .ticket .right .line {
   display: flex;
   margin-bottom: 1rem;
 }
-.commit .container .ticket .left .line .icon, .commit .container .ticket .right .line .icon {
+.replace-screen-page .commit .container .ticket .left .line .icon, .replace-screen-page .commit .container .ticket .right .line .icon {
   position: relative;
   margin-top: 6px;
 }
-.commit .container .ticket .left .line .icon .border, .commit .container .ticket .right .line .icon .border {
+.replace-screen-page .commit .container .ticket .left .line .icon .border, .replace-screen-page .commit .container .ticket .right .line .icon .border {
   border: 0px;
 }
-.commit .container .ticket .left .line .icon .tick, .commit .container .ticket .right .line .icon .tick {
+.replace-screen-page .commit .container .ticket .left .line .icon .tick, .replace-screen-page .commit .container .ticket .right .line .icon .tick {
   position: absolute;
   top: 0;
   left: 9px;
 }
-.commit .container .ticket .left .line .context, .commit .container .ticket .right .line .context {
+.replace-screen-page .commit .container .ticket .left .line .context, .replace-screen-page .commit .container .ticket .right .line .context {
   padding-left: 1rem;
 }
-.commit .container .ticket .left .line .context .text-light, .commit .container .ticket .right .line .context .text-light {
+.replace-screen-page .commit .container .ticket .left .line .context .text-light, .replace-screen-page .commit .container .ticket .right .line .context .text-light {
   font-size: 1.25rem;
   line-height: 29px;
   color: #4F4F4F;
 }
-.subscribe {
+.replace-screen-page .subscribe {
   padding: 1rem;
   background: url("/images/replace-screen/subscribe-bg.jpg") center no-repeat;
   background-size: cover;
 }
-.subscribe .container .left .text-bold, .subscribe .commit .container .ticket .right .text-bold, .commit .subscribe .container .ticket .right .text-bold {
+.replace-screen-page .subscribe .container .left .text-bold, .replace-screen-page .subscribe .commit .container .ticket .right .text-bold, .replace-screen-page .commit .subscribe .container .ticket .right .text-bold {
   font-weight: bold;
   font-size: 1.5rem;
   line-height: 38px;
@@ -1165,15 +1161,15 @@ body {
   color: #FFFFFF;
   margin-bottom: 1rem;
 }
-.subscribe .container .left .text-light, .subscribe .commit .container .ticket .right .text-light, .commit .subscribe .container .ticket .right .text-light {
+.replace-screen-page .subscribe .container .left .text-light, .replace-screen-page .subscribe .commit .container .ticket .right .text-light, .replace-screen-page .commit .subscribe .container .ticket .right .text-light {
   font-size: 1rem;
   line-height: 19px;
   text-align: justify;
   color: #FFFFFF;
   margin-bottom: 1rem;
 }
-.subscribe .container .right .line input,
-.subscribe .container .right .line textarea {
+.replace-screen-page .subscribe .container .right .line input,
+.replace-screen-page .subscribe .container .right .line textarea {
   width: 100%;
   height: 50px;
   border: 1px solid #FFFFFF;
@@ -1190,19 +1186,19 @@ body {
   -ms-border-radius: 3px;
   -o-border-radius: 3px;
 }
-.subscribe .container .right .line input::placeholder,
-.subscribe .container .right .line textarea::placeholder {
+.replace-screen-page .subscribe .container .right .line input::placeholder,
+.replace-screen-page .subscribe .container .right .line textarea::placeholder {
   color: #FFFFFF;
 }
-.subscribe .container .right .line textarea {
+.replace-screen-page .subscribe .container .right .line textarea {
   height: 170px;
   padding: 14px 21px;
   resize: none;
 }
-.subscribe .container .right .wrapper-button {
+.replace-screen-page .subscribe .container .right .wrapper-button {
   text-align: center;
 }
-.subscribe .container .right .wrapper-button .btn-red-radius {
+.replace-screen-page .subscribe .container .right .wrapper-button .btn-red-radius {
   font-weight: bold;
   font-size: 1rem;
   line-height: 19px;
@@ -1219,21 +1215,20 @@ body {
   -ms-transition: all 0.4s;
   -o-transition: all 0.4s;
 }
-.subscribe .container .right .wrapper-button .btn-red-radius:hover {
+.replace-screen-page .subscribe .container .right .wrapper-button .btn-red-radius:hover {
   background: none;
   border: 2px solid #F90729;
   color: #F90729;
 }
-
-.faq {
+.replace-screen-page .faq {
   padding: 1rem;
 }
-.faq .container .content .item {
+.replace-screen-page .faq .container .content .item {
   background: #F2F2F2;
   padding: 2rem;
   margin-bottom: 1rem;
 }
-.faq .container .content .item .text-bold {
+.replace-screen-page .faq .container .content .item .text-bold {
   font-weight: bold;
   font-size: 22px;
   line-height: 26px;
@@ -1241,22 +1236,22 @@ body {
   color: #4F4F4F;
   margin-bottom: 1rem;
 }
-.faq .container .content .item .text-light {
+.replace-screen-page .faq .container .content .item .text-light {
   font-size: 1rem;
   line-height: 19px;
   text-align: center;
   color: #4F4F4F;
   margin-bottom: 1rem;
 }
-.faq .container .content .item .text-light .text-red {
+.replace-screen-page .faq .container .content .item .text-light .text-red {
   color: #F90729;
   font-size: 1.25rem;
   font-weight: bold;
 }
-.faq .container .content .item .wrapper-button {
+.replace-screen-page .faq .container .content .item .wrapper-button {
   text-align: center;
 }
-.faq .container .content .item .wrapper-button .btn-red {
+.replace-screen-page .faq .container .content .item .wrapper-button .btn-red {
   max-width: 235px;
   width: 100%;
   height: 50px;
@@ -1273,38 +1268,36 @@ body {
   -ms-transition: all 0.4s;
   -o-transition: all 0.4s;
 }
-.faq .container .content .item .wrapper-button .btn-red:hover {
+.replace-screen-page .faq .container .content .item .wrapper-button .btn-red:hover {
   color: #FFFFFF;
   background: #F90729;
 }
-.faq .container .content .item.item-3 {
+.replace-screen-page .faq .container .content .item.item-3 {
   margin-bottom: 0;
 }
 
 @media (min-width: 768px) {
-  .title-red-bold {
+  .replace-screen-page .title-red-bold {
     font-size: 2rem;
     margin-bottom: 57px;
   }
-  .title-red-bold::before {
+  .replace-screen-page .title-red-bold::before {
     bottom: -25px;
   }
-
-  .banner .wrapper .brand {
+  .replace-screen-page .banner .wrapper .brand {
     font-size: 1.75rem;
   }
-  .banner .wrapper .text-bold {
+  .replace-screen-page .banner .wrapper .text-bold {
     font-size: 2.5rem;
     line-height: 48px;
   }
-
-  .step-select {
+  .replace-screen-page .step-select {
     padding: 70px 1rem;
   }
-  .step-select .container .wrapper-text {
+  .replace-screen-page .step-select .container .wrapper-text {
     position: relative;
   }
-  .step-select .container .wrapper-text .text-light {
+  .replace-screen-page .step-select .container .wrapper-text .text-light {
     max-width: 585px;
     position: absolute;
     left: 50%;
@@ -1315,22 +1308,22 @@ body {
     -o-transform: translateX(-50%);
     position: relative;
   }
-  .step-select .container .steps {
+  .replace-screen-page .step-select .container .steps {
     flex-direction: row;
     padding: 60px 0;
   }
-  .step-select .container .steps .step .wrapper {
+  .replace-screen-page .step-select .container .steps .step .wrapper {
     width: 138px;
     height: 138px;
     margin-bottom: 25px;
   }
-  .step-select .container .steps .step .wrapper span {
+  .replace-screen-page .step-select .container .steps .step .wrapper span {
     font-size: 64px;
   }
-  .step-select .container .steps .step.step-1, .step-select .container .steps .step.step-2 {
+  .replace-screen-page .step-select .container .steps .step.step-1, .replace-screen-page .step-select .container .steps .step.step-2 {
     margin-bottom: 0;
   }
-  .step-select .container .steps .arrow {
+  .replace-screen-page .step-select .container .steps .arrow {
     max-width: 175px;
     width: 15%;
     top: -2rem;
@@ -1340,12 +1333,11 @@ body {
     -ms-transform: rotate(0);
     -o-transform: rotate(0);
   }
-
-  .service {
+  .replace-screen-page .service {
     padding: 110px 16px 200px;
     position: relative;
   }
-  .service::before {
+  .replace-screen-page .service::before {
     content: "";
     display: block;
     width: 200px;
@@ -1357,7 +1349,7 @@ body {
     left: 0;
     z-index: -1;
   }
-  .service::after {
+  .replace-screen-page .service::after {
     content: "";
     display: block;
     width: 200px;
@@ -1369,128 +1361,125 @@ body {
     right: 0;
     z-index: -1;
   }
-  .service .container .line {
+  .replace-screen-page .service .container .line {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
   }
-  .service .container .line .image {
+  .replace-screen-page .service .container .line .image {
     width: calc(50% - 15px);
   }
-  .service .container .line .content {
+  .replace-screen-page .service .container .line .content {
     width: calc(50% - 15px);
   }
-  .service .container .line .content .select-box .text-red-small {
+  .replace-screen-page .service .container .line .content .select-box .text-red-small {
     font-size: 22px;
   }
-  .service .container .line.line-1 {
+  .replace-screen-page .service .container .line.line-1 {
     flex-direction: row-reverse;
   }
-  .service .container .line.line-1 .image .img-2 {
+  .replace-screen-page .service .container .line.line-1 .image .img-2 {
     top: -10vw;
   }
-  .service .container .line.line-2 {
+  .replace-screen-page .service .container .line.line-2 {
     margin-top: 150px;
   }
-  .service .container .line.line-2 .image .img-2 {
+  .replace-screen-page .service .container .line.line-2 .image .img-2 {
     left: 24vw;
     top: -10vw;
   }
-
-  .commit {
+  .replace-screen-page .commit {
     padding: 90px 16px;
   }
-  .commit .container > .text-light {
+  .replace-screen-page .commit .container > .text-light {
     margin-bottom: 60px;
   }
-  .commit .container .ticket {
+  .replace-screen-page .commit .container .ticket {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
   }
-  .commit .container .ticket .left, .commit .container .ticket .right {
+  .replace-screen-page .commit .container .ticket .left, .replace-screen-page .commit .container .ticket .right {
     width: calc(50% - 1rem);
   }
-  .commit .container .ticket .left .line, .commit .container .ticket .right .line {
+  .replace-screen-page .commit .container .ticket .left .line, .replace-screen-page .commit .container .ticket .right .line {
     margin-bottom: 42px;
   }
-  .commit .container .ticket .left .line .context .text-light, .commit .container .ticket .right .line .context .text-light {
+  .replace-screen-page .commit .container .ticket .left .line .context .text-light, .replace-screen-page .commit .container .ticket .right .line .context .text-light {
     font-size: 1.5rem;
   }
-  .commit .container .ticket .left .line:last-child, .commit .container .ticket .right .line:last-child {
+  .replace-screen-page .commit .container .ticket .left .line:last-child, .replace-screen-page .commit .container .ticket .right .line:last-child {
     margin-bottom: 0;
   }
-
-  .subscribe {
+  .replace-screen-page .subscribe {
     padding: 87px 16px 68px;
   }
-  .subscribe .container {
+  .replace-screen-page .subscribe .container {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
   }
-  .subscribe .container .left, .subscribe .commit .container .ticket .right, .commit .subscribe .container .ticket .right {
+  .replace-screen-page .subscribe .container .left, .replace-screen-page .subscribe .commit .container .ticket .right, .replace-screen-page .commit .subscribe .container .ticket .right {
     width: calc(42% - 1rem);
   }
-  .subscribe .container .left .text-bold, .subscribe .commit .container .ticket .right .text-bold, .commit .subscribe .container .ticket .right .text-bold {
+  .replace-screen-page .subscribe .container .left .text-bold, .replace-screen-page .subscribe .commit .container .ticket .right .text-bold, .replace-screen-page .commit .subscribe .container .ticket .right .text-bold {
     font-size: 2rem;
     margin-bottom: 2rem;
   }
-  .subscribe .container .right {
+  .replace-screen-page .subscribe .container .right {
     width: calc(58% - 1rem);
   }
-  .subscribe .container .right .line {
+  .replace-screen-page .subscribe .container .right .line {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  .subscribe .container .right .line input {
+  .replace-screen-page .subscribe .container .right .line input {
     width: calc(50% - 15px);
     margin-bottom: 15px;
   }
-  .subscribe .container .right .line textarea {
+  .replace-screen-page .subscribe .container .right .line textarea {
     margin-bottom: 23px;
   }
-  .subscribe .container .right .wrapper-button {
+  .replace-screen-page .subscribe .container .right .wrapper-button {
     text-align: right;
   }
 }
 @media (min-width: 992px) {
-  .useful {
+  .replace-screen-page .useful {
     height: 262px;
     padding: 0 1rem;
     display: flex;
     align-items: center;
   }
-  .useful .container {
+  .replace-screen-page .useful .container {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     width: 100%;
   }
-  .useful .container .line {
+  .replace-screen-page .useful .container .line {
     margin-bottom: 0;
     width: 30%;
   }
-  .useful .container .line .img img {
+  .replace-screen-page .useful .container .line .img img {
     width: 48px;
   }
-  .useful .container .line .context .text-red-bold {
+  .replace-screen-page .useful .container .line .context .text-red-bold {
     font-size: 22px;
   }
-  .useful .container .line .context .text-light {
+  .replace-screen-page .useful .container .line .context .text-light {
     font-size: 1rem;
   }
-
-  .faq {
+  .replace-screen-page .faq {
     padding: 90px 16px 80px;
   }
-  .faq .container .content {
+  .replace-screen-page .faq .container .content {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
   }
-  .faq .container .content .item {
+  .replace-screen-page .faq .container .content .item {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1500,46 +1489,40 @@ body {
     margin-bottom: 0;
     padding: 55px;
   }
-  .faq .container .content .item .wrapper-button .btn-red {
+  .replace-screen-page .faq .container .content .item .wrapper-button .btn-red {
     width: 235px;
   }
-  .faq .container .content .item.item-3 {
+  .replace-screen-page .faq .container .content .item.item-3 {
     justify-content: flex-start;
   }
 }
 @media (min-width: 1200px) {
-  .banner {
+  .replace-screen-page .banner {
     height: 850px;
   }
-
-  .useful {
+  .replace-screen-page .useful {
     padding: 0;
   }
-
-  .step-select {
+  .replace-screen-page .step-select {
     padding: 70px 0;
   }
-
-  .service {
+  .replace-screen-page .service {
     padding: 110px 0 200px;
   }
-  .service .container .line.line-1 .image .img-2 {
+  .replace-screen-page .service .container .line.line-1 .image .img-2 {
     top: -130px;
   }
-  .service .container .line.line-2 .image .img-2 {
+  .replace-screen-page .service .container .line.line-2 .image .img-2 {
     top: -126px;
     left: 305px;
   }
-
-  .commit {
+  .replace-screen-page .commit {
     padding: 90px 0 96px;
   }
-
-  .subscribe {
+  .replace-screen-page .subscribe {
     padding: 87px 100px 68px;
   }
-
-  .faq {
+  .replace-screen-page .faq {
     padding: 90px 0 80px;
   }
 }
