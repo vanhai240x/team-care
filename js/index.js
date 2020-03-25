@@ -1,4 +1,6 @@
-$(document).ready(() => {
+"use strict";
+
+$(document).ready(function() {
     $(".regular").slick({
         dots: true,
         infinite: true,
@@ -14,8 +16,7 @@ $(document).ready(() => {
                     infinite: true,
                     dots: true
                 }
-            },
-            {
+            }, {
                 breakpoint: 600,
                 settings: {
                     slidesToShow: 4,
@@ -23,8 +24,7 @@ $(document).ready(() => {
                     infinite: true,
                     dots: true
                 }
-            },
-            {
+            }, {
                 breakpoint: 480,
                 settings: {
                     slidesToShow: 2,
@@ -32,10 +32,9 @@ $(document).ready(() => {
                     infinite: true,
                     dots: true
                 }
-            }
-            // You can unslick at a given breakpoint now by adding:
+            } // You can unslick at a given breakpoint now by adding:
             // settings: "unslick"
             // instead of a settings object
         ]
     });
-})
+});
