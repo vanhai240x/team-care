@@ -1,4 +1,7 @@
 .header-mobile {
+    position: fixed;
+    width: 100%;
+    z-index: 99;
     .show {
         height: 60px;
         background-color: $white;
@@ -28,7 +31,7 @@
             background-color: $white;
             float: right;
             position: relative;
-            padding: 30px 20px 35px 20px;
+            padding: 30px 20px 70px 20px;
             @include flex(space-between, unset);
             flex-direction: column;
             .x-img {
@@ -51,7 +54,7 @@
                         color: $gray-3;
                         padding: 0;
                         text-transform: uppercase;
-                        margin-bottom: 28px;
+                        margin-bottom: 25px;
                         &.active {
                             color: $red;
                         }

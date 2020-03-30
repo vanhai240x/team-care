@@ -200,6 +200,11 @@ template {
   display: none;
 }
 
+.header-mobile {
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+}
 .header-mobile .show {
   height: 60px;
   background-color: #FFFFFF;
@@ -232,7 +237,7 @@ template {
   background-color: #FFFFFF;
   float: right;
   position: relative;
-  padding: 30px 20px 35px 20px;
+  padding: 30px 20px 70px 20px;
   display: flex;
   justify-content: space-between;
   align-items: unset;
@@ -260,7 +265,7 @@ template {
   color: #828282;
   padding: 0;
   text-transform: uppercase;
-  margin-bottom: 28px;
+  margin-bottom: 25px;
 }
 .header-mobile .filter .toggle-menu .navbar ul .nav-link.active {
   color: #F90729;
@@ -578,7 +583,7 @@ template {
   color: #F90729;
 }
 .footer .company {
-  padding: 2rem 1rem;
+  padding: 45px 1rem;
 }
 .footer .company .line {
   display: flex;
@@ -587,9 +592,14 @@ template {
 }
 .footer .company .line.line-1 {
   display: flex;
+  flex-direction: column;
+}
+.footer .company .line.line-1 .left, .footer .company .line.line-1 .replace-case-page .commit .container .ticket .right, .replace-case-page .commit .container .ticket .footer .company .line.line-1 .right, .footer .company .line.line-1 .replace-camera-page .commit .container .ticket .right, .replace-camera-page .commit .container .ticket .footer .company .line.line-1 .right, .footer .company .line.line-1 .replace-battery-page .commit .container .ticket .right, .replace-battery-page .commit .container .ticket .footer .company .line.line-1 .right, .footer .company .line.line-1 .replace-screen-page .commit .container .ticket .right, .replace-screen-page .commit .container .ticket .footer .company .line.line-1 .right {
+  margin-bottom: 45px;
 }
 .footer .company .line.line-1 .right {
   display: flex;
+  margin-bottom: 45px;
 }
 .footer .company .line.line-1 .right .icon {
   margin-right: 10px;
@@ -616,6 +626,10 @@ template {
 .footer .company .line.line-2 {
   justify-content: space-around;
   align-items: flex-start;
+  margin-bottom: 25px;
+}
+.footer .company .line.line-2 .nav-link {
+  max-width: 120px;
 }
 .footer .company .line.line-2 .nav-link .link-light {
   font-weight: 500;
@@ -656,6 +670,11 @@ template {
   margin-bottom: 0;
 }
 
+@media (min-width: 576px) {
+  .footer .company .line.line-2 .nav-link {
+    max-width: max-content;
+  }
+}
 @media (min-width: 768px) {
   .footer .guarantee .top {
     height: 538px;
@@ -744,8 +763,17 @@ template {
     height: 270px;
     margin: auto;
   }
+  .footer .company .line.line-1 {
+    flex-direction: row;
+  }
+  .footer .company .line.line-1 .left, .footer .company .line.line-1 .replace-case-page .commit .container .ticket .right, .replace-case-page .commit .container .ticket .footer .company .line.line-1 .right, .footer .company .line.line-1 .replace-camera-page .commit .container .ticket .right, .replace-camera-page .commit .container .ticket .footer .company .line.line-1 .right, .footer .company .line.line-1 .replace-battery-page .commit .container .ticket .right, .replace-battery-page .commit .container .ticket .footer .company .line.line-1 .right, .footer .company .line.line-1 .replace-screen-page .commit .container .ticket .right, .replace-screen-page .commit .container .ticket .footer .company .line.line-1 .right {
+    margin-bottom: 0;
+  }
   .footer .company .line.line-1 .left img, .footer .company .line.line-1 .replace-case-page .commit .container .ticket .right img, .replace-case-page .commit .container .ticket .footer .company .line.line-1 .right img, .footer .company .line.line-1 .replace-camera-page .commit .container .ticket .right img, .replace-camera-page .commit .container .ticket .footer .company .line.line-1 .right img, .footer .company .line.line-1 .replace-battery-page .commit .container .ticket .right img, .replace-battery-page .commit .container .ticket .footer .company .line.line-1 .right img, .footer .company .line.line-1 .replace-screen-page .commit .container .ticket .right img, .replace-screen-page .commit .container .ticket .footer .company .line.line-1 .right img {
     margin-right: 12px;
+  }
+  .footer .company .line.line-1 .right {
+    margin-bottom: 0;
   }
   .footer .company .line.line-2 {
     align-items: flex-start;
@@ -778,8 +806,9 @@ template {
   .footer .company .line.line-1 .left img, .footer .company .line.line-1 .replace-case-page .commit .container .ticket .right img, .replace-case-page .commit .container .ticket .footer .company .line.line-1 .right img, .footer .company .line.line-1 .replace-camera-page .commit .container .ticket .right img, .replace-camera-page .commit .container .ticket .footer .company .line.line-1 .right img, .footer .company .line.line-1 .replace-battery-page .commit .container .ticket .right img, .replace-battery-page .commit .container .ticket .footer .company .line.line-1 .right img, .footer .company .line.line-1 .replace-screen-page .commit .container .ticket .right img, .replace-screen-page .commit .container .ticket .footer .company .line.line-1 .right img {
     margin-right: 42px;
   }
-}
-@media (min-width: 1200px) {
+  .footer .company .line.line-2 {
+    max-width: 410px;
+  }
   .footer .after-sale .bg-left {
     width: calc(100% - ((100% - 1200px) / 2 + 460px));
   }
@@ -854,6 +883,9 @@ body {
   margin: auto;
 }
 
+.index-page {
+  padding-top: 60px;
+}
 .index-page .banner {
   height: 500px;
   background: url("/images/banner-home.svg") center no-repeat;
@@ -1046,6 +1078,9 @@ body {
   background-image: url("/images/service-sub-4.svg");
 }
 
+.replace-screen-page {
+  padding-top: 60px;
+}
 .replace-screen-page .banner {
   height: 500px;
   background: url("/images/replace-screen/banner-bg.svg") center no-repeat;
@@ -1481,6 +1516,9 @@ body {
   margin-bottom: 0;
 }
 
+.replace-battery-page {
+  padding-top: 60px;
+}
 .replace-battery-page .banner {
   height: 500px;
   background: url("/images/replace-battery/banner-bg.jpg") center no-repeat;
@@ -1922,6 +1960,9 @@ body {
   content: none;
 }
 
+.replace-camera-page {
+  padding-top: 60px;
+}
 .replace-camera-page .banner {
   height: 500px;
   background: url("/images/change-camera/change-camera-bg.jpg") center no-repeat;
@@ -2367,6 +2408,9 @@ body {
   margin-bottom: 0;
 }
 
+.replace-case-page {
+  padding-top: 60px;
+}
 .replace-case-page .container {
   max-width: 1200px;
   padding: 0;
@@ -2825,6 +2869,9 @@ body {
   margin-bottom: 0;
 }
 
+.news-page {
+  padding-top: 60px;
+}
 .news-page .breadcrumb {
   height: 70px;
   background: url("/images/news/breadcrumb-bg.jpg") center no-repeat;
@@ -3028,6 +3075,9 @@ body {
   background-size: contain;
 }
 
+.contact-page {
+  padding-top: 60px;
+}
 .contact-page .breadcrumb {
   height: 70px;
   background: url("/images/news/breadcrumb-bg.jpg") center no-repeat;
@@ -3167,6 +3217,9 @@ body {
 }
 
 @media (min-width: 768px) {
+  .index-page {
+    padding-top: 0;
+  }
   .index-page .banner .wrapper .brand {
     font-size: 1.75rem;
   }
@@ -3242,6 +3295,9 @@ body {
     flex-direction: row;
   }
 
+  .replace-screen-page {
+    padding-top: 0;
+  }
   .replace-screen-page .title-red-bold {
     font-size: 2rem;
     margin-bottom: 57px;
@@ -3410,6 +3466,9 @@ body {
     text-align: right;
   }
 
+  .replace-battery-page {
+    padding-top: 0;
+  }
   .replace-battery-page .title-red-bold {
     font-size: 2rem;
     margin-bottom: 57px;
@@ -3565,6 +3624,9 @@ body {
     bottom: -50px;
   }
 
+  .replace-camera-page {
+    padding-top: 0;
+  }
   .replace-camera-page .title-red-bold {
     font-size: 2rem;
     margin-bottom: 57px;
@@ -3711,6 +3773,9 @@ body {
     text-align: right;
   }
 
+  .replace-case-page {
+    padding-top: 0;
+  }
   .replace-case-page .title-red-bold {
     font-size: 2rem;
     margin-bottom: 57px;
@@ -3857,6 +3922,9 @@ body {
     text-align: right;
   }
 
+  .news-page {
+    padding-top: 0;
+  }
   .news-page .title-red-bold {
     font-size: 2rem;
     margin-bottom: 57px;
@@ -3930,6 +3998,9 @@ body {
     font-size: 14px;
   }
 
+  .contact-page {
+    padding-top: 0;
+  }
   .contact-page .title-red-bold {
     font-size: 2rem;
     margin-bottom: 57px;
