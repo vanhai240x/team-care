@@ -231,7 +231,7 @@ template {
   background-color: #FFFFFF;
   float: right;
   position: relative;
-  padding: 60px 20px 25px 20px;
+  padding: 30px 20px 35px 20px;
   display: flex;
   justify-content: space-between;
   align-items: unset;
@@ -259,7 +259,7 @@ template {
   color: #828282;
   padding: 0;
   text-transform: uppercase;
-  margin-bottom: 35px;
+  margin-bottom: 28px;
 }
 .header-mobile .filter .toggle-menu .navbar ul .nav-link.active {
   color: #F90729;
@@ -496,7 +496,7 @@ template {
   align-items: center;
   flex-direction: column;
 }
-.footer .guarantee .bottom .container .left p, .footer .guarantee .bottom .commit .container .ticket .right p, .commit .footer .guarantee .bottom .container .ticket .right p {
+.footer .guarantee .bottom .container .left p, .footer .guarantee .bottom .replace-case-page .commit .container .ticket .right p, .replace-case-page .commit .footer .guarantee .bottom .container .ticket .right p {
   font-weight: bold;
   font-size: 1.5rem;
   line-height: 38px;
@@ -631,7 +631,7 @@ template {
   text-decoration: none;
 }
 .footer .company .line.line-3 {
-  justify-content: flex-start;
+  justify-content: center;
 }
 .footer .company .line.line-3 .icon {
   margin-left: 2rem;
@@ -743,7 +743,7 @@ template {
     height: 270px;
     margin: auto;
   }
-  .footer .company .line.line-1 .left img, .footer .company .line.line-1 .commit .container .ticket .right img, .commit .container .ticket .footer .company .line.line-1 .right img {
+  .footer .company .line.line-1 .left img, .footer .company .line.line-1 .replace-case-page .commit .container .ticket .right img, .replace-case-page .commit .container .ticket .footer .company .line.line-1 .right img {
     margin-right: 12px;
   }
   .footer .company .line.line-2 {
@@ -764,6 +764,7 @@ template {
     max-width: 180px;
     width: 20%;
     justify-content: space-between;
+    align-items: flex-start;
   }
   .footer .company .line.line-3 .icon {
     margin-left: 0;
@@ -773,8 +774,13 @@ template {
   .footer .company {
     padding: 54px 0 90px;
   }
-  .footer .company .line.line-1 .left img, .footer .company .line.line-1 .commit .container .ticket .right img, .commit .container .ticket .footer .company .line.line-1 .right img {
+  .footer .company .line.line-1 .left img, .footer .company .line.line-1 .replace-case-page .commit .container .ticket .right img, .replace-case-page .commit .container .ticket .footer .company .line.line-1 .right img {
     margin-right: 42px;
+  }
+}
+@media (min-width: 1200px) {
+  .footer .after-sale .bg-left {
+    width: calc(100% - ((100% - 1200px) / 2 + 460px));
   }
 }
 .btn-border-red {
@@ -835,7 +841,12 @@ body {
   margin: auto;
 }
 
-.banner {
+.replace-case-page .container {
+  max-width: 1200px;
+  padding: 0;
+  margin: auto;
+}
+.replace-case-page .banner {
   height: 500px;
   background: url("/images/replace-case/banner-bg.jpg") center no-repeat;
   background-size: cover;
@@ -843,7 +854,7 @@ body {
   align-items: center;
   padding: 0;
 }
-.banner .wrapper {
+.replace-case-page .banner .wrapper {
   background: rgba(0, 0, 0, 0.5);
   width: 100%;
   height: 414px;
@@ -854,7 +865,7 @@ body {
   flex-direction: column;
   text-align: center;
 }
-.banner .wrapper .brand {
+.replace-case-page .banner .wrapper .brand {
   font-weight: bold;
   font-size: 1.5rem;
   line-height: 29px;
@@ -862,111 +873,108 @@ body {
   text-transform: uppercase;
   margin-bottom: 20px;
 }
-.banner .wrapper .text-bold {
+.replace-case-page .banner .wrapper .text-bold {
   font-weight: 900;
   font-size: 2rem;
   line-height: 38px;
   margin-bottom: 20px;
   text-transform: uppercase;
 }
-.banner .wrapper .text-light {
+.replace-case-page .banner .wrapper .text-light {
   font-size: 1rem;
   line-height: 19px;
   margin-bottom: 20px;
   max-width: 585px;
 }
-
-.useful {
+.replace-case-page .useful {
   padding: 2rem 0;
 }
-.useful .container {
+.replace-case-page .useful .container {
   width: max-content;
 }
-.useful .container .line {
+.replace-case-page .useful .container .line {
   width: max-content;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 2rem;
 }
-.useful .container .line .img img {
+.replace-case-page .useful .container .line .img img {
   width: 40px;
 }
-.useful .container .line .context {
+.replace-case-page .useful .container .line .context {
   padding-left: 10px;
 }
-.useful .container .line .context .text-red-bold {
+.replace-case-page .useful .container .line .context .text-red-bold {
   font-weight: bold;
   font-size: 20px;
   line-height: 26px;
   color: #F90729;
   margin-bottom: 3px;
 }
-.useful .container .line .context .text-light {
+.replace-case-page .useful .container .line .context .text-light {
   font-size: 14px;
   line-height: 19px;
   color: #4F4F4F;
 }
-.useful .container .line.line-3 {
+.replace-case-page .useful .container .line.line-3 {
   margin-bottom: 0;
 }
-
-.banner-2 {
+.replace-case-page .banner-2 {
   padding: 1rem;
-  background-color: #666666;
+  background-color: #E0E0E0;
 }
-.banner-2 .bg-right {
+.replace-case-page .banner-2 .bg-right {
   display: none;
 }
-.banner-2 .container .content .line {
+.replace-case-page .banner-2 .container .content .line {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   margin-bottom: 1rem;
 }
-.banner-2 .container .content .line .icon {
+.replace-case-page .banner-2 .container .content .line .icon {
   position: relative;
   margin-right: 0.5rem;
 }
-.banner-2 .container .content .line .icon .border {
+.replace-case-page .banner-2 .container .content .line .icon .border {
   width: 18px;
 }
-.banner-2 .container .content .line .icon .tick {
+.replace-case-page .banner-2 .container .content .line .icon .tick {
   width: 13px;
   position: absolute;
   right: -2px;
 }
-.banner-2 .container .content .line .context .text-light {
+.replace-case-page .banner-2 .container .content .line .context .text-light {
   font-size: 1rem;
   line-height: 19px;
   color: #4F4F4F;
   margin-top: -3px;
 }
-.banner-2 .container .content .line.line-4 .text-bold {
+.replace-case-page .banner-2 .container .content .line.line-4 .text-bold {
   font-weight: bold;
   font-size: 20px;
   line-height: 26px;
   color: #4F4F4F;
   padding-left: 1rem;
 }
-
-.signal {
+.replace-case-page .signal {
   padding: 1rem;
   background: #F2F2F2;
 }
-.signal .container .title-red-bold {
+.replace-case-page .signal .container .title-red-bold {
   font-size: 22px;
 }
-.signal .container .title-red-bold::before {
+.replace-case-page .signal .container .title-red-bold::before {
   width: 136px;
 }
-.signal .container .block-flex {
+.replace-case-page .signal .container .block-flex {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
   flex-wrap: wrap;
 }
-.signal .container .block-flex .item {
+.replace-case-page .signal .container .block-flex .item {
   width: 200px;
   display: flex;
   justify-content: center;
@@ -974,25 +982,25 @@ body {
   flex-direction: column;
   margin-bottom: 1rem;
 }
-.signal .container .block-flex .item .icon {
+.replace-case-page .signal .container .block-flex .item .icon {
   position: relative;
 }
-.signal .container .block-flex .item .icon .sub-icon {
+.replace-case-page .signal .container .block-flex .item .icon .sub-icon {
   position: absolute;
   top: 6px;
   left: 7px;
 }
-.signal .container .block-flex .item .text-bold {
+.replace-case-page .signal .container .block-flex .item .text-bold {
   font-weight: bold;
   font-size: 1rem;
   line-height: 19px;
   text-align: center;
   color: #4F4F4F;
 }
-.signal .container .wrapper-text {
+.replace-case-page .signal .container .wrapper-text {
   text-align: center;
 }
-.signal .container .wrapper-text .text-light {
+.replace-case-page .signal .container .wrapper-text .text-light {
   font-size: 1rem;
   line-height: 19px;
   text-align: center;
@@ -1000,28 +1008,27 @@ body {
   max-width: 585px;
   margin: auto;
 }
-
-.service {
+.replace-case-page .service {
   padding: 1rem;
 }
-.service .container .line .image {
+.replace-case-page .service .container .line .image {
   margin-bottom: -15vw;
 }
-.service .container .line .image .img-1 {
+.replace-case-page .service .container .line .image .img-1 {
   width: 82%;
   max-width: 481px;
   float: right;
 }
-.service .container .line .image .img-2 {
+.replace-case-page .service .container .line .image .img-2 {
   width: 47%;
   max-width: 278px;
   position: relative;
   top: -19vw;
 }
-.service .container .line .content .title-red-bold {
+.replace-case-page .service .container .line .content .title-red-bold {
   text-align: left;
 }
-.service .container .line .content .title-red-bold::before {
+.replace-case-page .service .container .line .content .title-red-bold::before {
   left: 0;
   transform: translateX(0);
   -webkit-transform: translateX(0);
@@ -1029,25 +1036,25 @@ body {
   -ms-transform: translateX(0);
   -o-transform: translateX(0);
 }
-.service .container .line .content .text-light {
+.replace-case-page .service .container .line .content .text-light {
   font-size: 1rem;
   line-height: 19px;
   color: #4F4F4F;
   margin-bottom: 12px;
 }
-.service .container .line .content .select-box {
+.replace-case-page .service .container .line .content .select-box {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 30px;
 }
-.service .container .line .content .select-box .text-red-small {
+.replace-case-page .service .container .line .content .select-box .text-red-small {
   font-weight: bold;
   font-size: 20px;
   line-height: 26px;
   color: #F90729;
 }
-.service .container .line .content .select-box .select {
+.replace-case-page .service .container .line .content .select-box .select {
   max-width: 276px;
   width: 60%;
   height: 65px;
@@ -1065,19 +1072,19 @@ body {
   text-indent: 1px;
   text-overflow: "";
 }
-.service .container .line .content .select-box .select::-ms-expand {
+.replace-case-page .service .container .line .content .select-box .select::-ms-expand {
   display: none;
 }
-.service .container .line .content .wrapper-table {
+.replace-case-page .service .container .line .content .wrapper-table {
   background: #FFFFFF;
   border: 1px solid #EEEEEE;
   box-sizing: border-box;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
 }
-.service .container .line .content .wrapper-table .table {
+.replace-case-page .service .container .line .content .wrapper-table .table {
   width: 100%;
 }
-.service .container .line .content .wrapper-table .table thead tr {
+.replace-case-page .service .container .line .content .wrapper-table .table thead tr {
   width: 100%;
   height: 60px;
   display: flex;
@@ -1085,34 +1092,34 @@ body {
   align-items: center;
   margin-bottom: 22px;
 }
-.service .container .line .content .wrapper-table .table thead tr th {
+.replace-case-page .service .container .line .content .wrapper-table .table thead tr th {
   font-size: 1rem;
   line-height: 19px;
   color: #4F4F4F;
   font-weight: normal;
   width: 33.33%;
 }
-.service .container .line .content .wrapper-table .table tbody tr {
+.replace-case-page .service .container .line .content .wrapper-table .table tbody tr {
   height: 60px;
   display: flex;
   align-items: center;
 }
-.service .container .line .content .wrapper-table .table tbody tr td {
+.replace-case-page .service .container .line .content .wrapper-table .table tbody tr td {
   width: 33.33%;
   font-size: 1rem;
   line-height: 19px;
   color: #4F4F4F;
   text-align: center;
 }
-.service .container .line .content .wrapper-table .table tbody tr:nth-child(2n+1) {
+.replace-case-page .service .container .line .content .wrapper-table .table tbody tr:nth-child(2n+1) {
   background-color: #F2F2F2;
 }
-.service .container .line .content .wrapper-table .wrapper-button {
+.replace-case-page .service .container .line .content .wrapper-table .wrapper-button {
   margin: 30px auto;
   width: 100%;
   text-align: center;
 }
-.service .container .line .content .wrapper-table .wrapper-button .btn-view-more {
+.replace-case-page .service .container .line .content .wrapper-table .wrapper-button .btn-view-more {
   font-weight: bold;
   font-size: 1rem;
   line-height: 19px;
@@ -1120,7 +1127,7 @@ body {
   border: none;
   background: none;
 }
-.service .container .line .content .wrapper-table .wrapper-button .btn-view-more::after {
+.replace-case-page .service .container .line .content .wrapper-table .wrapper-button .btn-view-more::after {
   content: "";
   display: inline-block;
   width: 15px;
@@ -1129,48 +1136,47 @@ body {
   background-size: 15px;
   margin-left: 10px;
 }
-
-.commit {
+.replace-case-page .commit {
   padding: 1rem;
   background-color: #F2F2F2;
 }
-.commit .container > .text-light {
+.replace-case-page .commit .container > .text-light {
   font-size: 1rem;
   line-height: 19px;
   text-align: center;
   color: #4F4F4F;
   margin-bottom: 1rem;
 }
-.commit .container .ticket .left .line, .commit .container .ticket .right .line {
+.replace-case-page .commit .container .ticket .left .line, .replace-case-page .commit .container .ticket .right .line {
   display: flex;
   margin-bottom: 1rem;
 }
-.commit .container .ticket .left .line .icon, .commit .container .ticket .right .line .icon {
+.replace-case-page .commit .container .ticket .left .line .icon, .replace-case-page .commit .container .ticket .right .line .icon {
   position: relative;
   margin-top: 6px;
 }
-.commit .container .ticket .left .line .icon .border, .commit .container .ticket .right .line .icon .border {
+.replace-case-page .commit .container .ticket .left .line .icon .border, .replace-case-page .commit .container .ticket .right .line .icon .border {
   border: 0px;
 }
-.commit .container .ticket .left .line .icon .tick, .commit .container .ticket .right .line .icon .tick {
+.replace-case-page .commit .container .ticket .left .line .icon .tick, .replace-case-page .commit .container .ticket .right .line .icon .tick {
   position: absolute;
   top: 0;
   left: 9px;
 }
-.commit .container .ticket .left .line .context, .commit .container .ticket .right .line .context {
+.replace-case-page .commit .container .ticket .left .line .context, .replace-case-page .commit .container .ticket .right .line .context {
   padding-left: 1rem;
 }
-.commit .container .ticket .left .line .context .text-light, .commit .container .ticket .right .line .context .text-light {
+.replace-case-page .commit .container .ticket .left .line .context .text-light, .replace-case-page .commit .container .ticket .right .line .context .text-light {
   font-size: 1.25rem;
   line-height: 29px;
   color: #4F4F4F;
 }
-.subscribe {
+.replace-case-page .subscribe {
   padding: 1rem;
   background: url("/images/replace-screen/subscribe-bg.jpg") center no-repeat;
   background-size: cover;
 }
-.subscribe .container .left .text-bold, .subscribe .commit .container .ticket .right .text-bold, .commit .subscribe .container .ticket .right .text-bold {
+.replace-case-page .subscribe .container .left .text-bold, .replace-case-page .subscribe .commit .container .ticket .right .text-bold, .replace-case-page .commit .subscribe .container .ticket .right .text-bold {
   font-weight: bold;
   font-size: 1.5rem;
   line-height: 38px;
@@ -1178,15 +1184,15 @@ body {
   color: #FFFFFF;
   margin-bottom: 1rem;
 }
-.subscribe .container .left .text-light, .subscribe .commit .container .ticket .right .text-light, .commit .subscribe .container .ticket .right .text-light {
+.replace-case-page .subscribe .container .left .text-light, .replace-case-page .subscribe .commit .container .ticket .right .text-light, .replace-case-page .commit .subscribe .container .ticket .right .text-light {
   font-size: 1rem;
   line-height: 19px;
   text-align: justify;
   color: #FFFFFF;
   margin-bottom: 1rem;
 }
-.subscribe .container .right .line input,
-.subscribe .container .right .line textarea {
+.replace-case-page .subscribe .container .right .line input,
+.replace-case-page .subscribe .container .right .line textarea {
   width: 100%;
   height: 50px;
   border: 1px solid #FFFFFF;
@@ -1203,19 +1209,19 @@ body {
   -ms-border-radius: 3px;
   -o-border-radius: 3px;
 }
-.subscribe .container .right .line input::placeholder,
-.subscribe .container .right .line textarea::placeholder {
+.replace-case-page .subscribe .container .right .line input::placeholder,
+.replace-case-page .subscribe .container .right .line textarea::placeholder {
   color: #FFFFFF;
 }
-.subscribe .container .right .line textarea {
+.replace-case-page .subscribe .container .right .line textarea {
   height: 170px;
   padding: 14px 21px;
   resize: none;
 }
-.subscribe .container .right .wrapper-button {
+.replace-case-page .subscribe .container .right .wrapper-button {
   text-align: center;
 }
-.subscribe .container .right .wrapper-button .btn-red-radius {
+.replace-case-page .subscribe .container .right .wrapper-button .btn-red-radius {
   font-weight: bold;
   font-size: 1rem;
   line-height: 19px;
@@ -1232,21 +1238,20 @@ body {
   -ms-transition: all 0.4s;
   -o-transition: all 0.4s;
 }
-.subscribe .container .right .wrapper-button .btn-red-radius:hover {
+.replace-case-page .subscribe .container .right .wrapper-button .btn-red-radius:hover {
   background: none;
   border: 2px solid #F90729;
   color: #F90729;
 }
-
-.faq {
+.replace-case-page .faq {
   padding: 1rem;
 }
-.faq .container .content .item {
+.replace-case-page .faq .container .content .item {
   background: #F2F2F2;
   padding: 2rem;
   margin-bottom: 1rem;
 }
-.faq .container .content .item .text-bold {
+.replace-case-page .faq .container .content .item .text-bold {
   font-weight: bold;
   font-size: 22px;
   line-height: 26px;
@@ -1254,22 +1259,22 @@ body {
   color: #4F4F4F;
   margin-bottom: 1rem;
 }
-.faq .container .content .item .text-light {
+.replace-case-page .faq .container .content .item .text-light {
   font-size: 1rem;
   line-height: 19px;
   text-align: center;
   color: #4F4F4F;
   margin-bottom: 1rem;
 }
-.faq .container .content .item .text-light .text-red {
+.replace-case-page .faq .container .content .item .text-light .text-red {
   color: #F90729;
   font-size: 1.25rem;
   font-weight: bold;
 }
-.faq .container .content .item .wrapper-button {
+.replace-case-page .faq .container .content .item .wrapper-button {
   text-align: center;
 }
-.faq .container .content .item .wrapper-button .btn-red {
+.replace-case-page .faq .container .content .item .wrapper-button .btn-red {
   max-width: 235px;
   width: 100%;
   height: 50px;
@@ -1286,36 +1291,34 @@ body {
   -ms-transition: all 0.4s;
   -o-transition: all 0.4s;
 }
-.faq .container .content .item .wrapper-button .btn-red:hover {
+.replace-case-page .faq .container .content .item .wrapper-button .btn-red:hover {
   color: #FFFFFF;
   background: #F90729;
 }
-.faq .container .content .item.item-3 {
+.replace-case-page .faq .container .content .item.item-3 {
   margin-bottom: 0;
 }
 
 @media (min-width: 768px) {
-  .title-red-bold {
+  .replace-case-page .title-red-bold {
     font-size: 2rem;
     margin-bottom: 57px;
   }
-  .title-red-bold::before {
+  .replace-case-page .title-red-bold::before {
     bottom: -25px;
   }
-
-  .banner .wrapper .brand {
+  .replace-case-page .banner .wrapper .brand {
     font-size: 1.75rem;
   }
-  .banner .wrapper .text-bold {
+  .replace-case-page .banner .wrapper .text-bold {
     font-size: 2.5rem;
     line-height: 48px;
   }
-
-  .banner-2 {
+  .replace-case-page .banner-2 {
     height: 525px;
     position: relative;
   }
-  .banner-2 .bg-right {
+  .replace-case-page .banner-2 .bg-right {
     display: block;
     width: calc(100% - 630px);
     max-width: 1048px;
@@ -1327,36 +1330,34 @@ body {
     left: 0;
     z-index: 0;
   }
-  .banner-2 .container {
+  .replace-case-page .banner-2 .container {
     display: flex;
     justify-content: flex-end;
     align-items: center;
   }
-  .banner-2 .container .content {
+  .replace-case-page .banner-2 .container .content {
     width: 500px;
     padding-top: 100px;
   }
-  .banner-2 .container .content .line.line-4 {
+  .replace-case-page .banner-2 .container .content .line.line-4 {
     margin-top: 54px;
     margin-bottom: 0;
   }
-  .banner-2 .container .content .line.line-4 .text-bold {
+  .replace-case-page .banner-2 .container .content .line.line-4 .text-bold {
     font-size: 22px;
     padding-left: 30px;
   }
-
-  .signal {
+  .replace-case-page .signal {
     padding: 90px 16px 100px;
   }
-  .signal .container .block-flex {
+  .replace-case-page .signal .container .block-flex {
     margin-bottom: 50px;
   }
-
-  .service {
+  .replace-case-page .service {
     padding: 120px 16px;
     position: relative;
   }
-  .service::before {
+  .replace-case-page .service::before {
     content: "";
     display: block;
     width: 200px;
@@ -1368,121 +1369,118 @@ body {
     left: 0;
     z-index: -1;
   }
-  .service .container .line {
+  .replace-case-page .service .container .line {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
   }
-  .service .container .line .image {
+  .replace-case-page .service .container .line .image {
     width: calc(50% - 15px);
   }
-  .service .container .line .content {
+  .replace-case-page .service .container .line .content {
     width: calc(50% - 15px);
   }
-  .service .container .line .content .select-box .text-red-small {
+  .replace-case-page .service .container .line .content .select-box .text-red-small {
     font-size: 22px;
   }
-  .service .container .line.line-1 {
+  .replace-case-page .service .container .line.line-1 {
     flex-direction: row-reverse;
   }
-  .service .container .line.line-1 .image .img-2 {
+  .replace-case-page .service .container .line.line-1 .image .img-2 {
     top: -10vw;
   }
-
-  .commit {
+  .replace-case-page .commit {
     padding: 90px 16px;
   }
-  .commit .container > .text-light {
+  .replace-case-page .commit .container > .text-light {
     margin-bottom: 60px;
   }
-  .commit .container .ticket {
+  .replace-case-page .commit .container .ticket {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
   }
-  .commit .container .ticket .left, .commit .container .ticket .right {
+  .replace-case-page .commit .container .ticket .left, .replace-case-page .commit .container .ticket .right {
     width: calc(50% - 1rem);
   }
-  .commit .container .ticket .left .line, .commit .container .ticket .right .line {
+  .replace-case-page .commit .container .ticket .left .line, .replace-case-page .commit .container .ticket .right .line {
     margin-bottom: 42px;
   }
-  .commit .container .ticket .left .line .context .text-light, .commit .container .ticket .right .line .context .text-light {
+  .replace-case-page .commit .container .ticket .left .line .context .text-light, .replace-case-page .commit .container .ticket .right .line .context .text-light {
     font-size: 1.5rem;
   }
-  .commit .container .ticket .left .line:last-child, .commit .container .ticket .right .line:last-child {
+  .replace-case-page .commit .container .ticket .left .line:last-child, .replace-case-page .commit .container .ticket .right .line:last-child {
     margin-bottom: 0;
   }
-
-  .subscribe {
+  .replace-case-page .subscribe {
     padding: 87px 16px 68px;
   }
-  .subscribe .container {
+  .replace-case-page .subscribe .container {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
   }
-  .subscribe .container .left, .subscribe .commit .container .ticket .right, .commit .subscribe .container .ticket .right {
+  .replace-case-page .subscribe .container .left, .replace-case-page .subscribe .commit .container .ticket .right, .replace-case-page .commit .subscribe .container .ticket .right {
     width: calc(42% - 1rem);
   }
-  .subscribe .container .left .text-bold, .subscribe .commit .container .ticket .right .text-bold, .commit .subscribe .container .ticket .right .text-bold {
+  .replace-case-page .subscribe .container .left .text-bold, .replace-case-page .subscribe .commit .container .ticket .right .text-bold, .replace-case-page .commit .subscribe .container .ticket .right .text-bold {
     font-size: 2rem;
     margin-bottom: 2rem;
   }
-  .subscribe .container .right {
+  .replace-case-page .subscribe .container .right {
     width: calc(58% - 1rem);
   }
-  .subscribe .container .right .line {
+  .replace-case-page .subscribe .container .right .line {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  .subscribe .container .right .line input {
+  .replace-case-page .subscribe .container .right .line input {
     width: calc(50% - 15px);
     margin-bottom: 15px;
   }
-  .subscribe .container .right .line textarea {
+  .replace-case-page .subscribe .container .right .line textarea {
     margin-bottom: 23px;
   }
-  .subscribe .container .right .wrapper-button {
+  .replace-case-page .subscribe .container .right .wrapper-button {
     text-align: right;
   }
 }
 @media (min-width: 992px) {
-  .useful {
+  .replace-case-page .useful {
     height: 262px;
     padding: 0 1rem;
     display: flex;
     align-items: center;
   }
-  .useful .container {
+  .replace-case-page .useful .container {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     width: 100%;
   }
-  .useful .container .line {
+  .replace-case-page .useful .container .line {
     margin-bottom: 0;
     width: 30%;
   }
-  .useful .container .line .img img {
+  .replace-case-page .useful .container .line .img img {
     width: 48px;
   }
-  .useful .container .line .context .text-red-bold {
+  .replace-case-page .useful .container .line .context .text-red-bold {
     font-size: 22px;
   }
-  .useful .container .line .context .text-light {
+  .replace-case-page .useful .container .line .context .text-light {
     font-size: 1rem;
   }
-
-  .faq {
+  .replace-case-page .faq {
     padding: 90px 16px 80px;
   }
-  .faq .container .content {
+  .replace-case-page .faq .container .content {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
   }
-  .faq .container .content .item {
+  .replace-case-page .faq .container .content .item {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1492,56 +1490,49 @@ body {
     margin-bottom: 0;
     padding: 55px;
   }
-  .faq .container .content .item .wrapper-button .btn-red {
+  .replace-case-page .faq .container .content .item .wrapper-button .btn-red {
     width: 235px;
   }
-  .faq .container .content .item.item-3 {
+  .replace-case-page .faq .container .content .item.item-3 {
     justify-content: flex-start;
   }
 }
 @media (min-width: 1200px) {
-  .banner {
+  .replace-case-page .banner {
     height: 850px;
   }
-
-  .useful {
+  .replace-case-page .useful {
     padding: 0;
   }
-
-  .banner-2 {
+  .replace-case-page .banner-2 {
     padding: 15px 0;
   }
-
-  .signal {
+  .replace-case-page .signal {
     padding: 90px 0 100px;
   }
-  .signal .container .block-flex {
+  .replace-case-page .signal .container .block-flex {
     justify-content: space-between;
   }
-  .signal .container .block-flex .icon {
+  .replace-case-page .signal .container .block-flex .icon {
     margin-bottom: 20px;
   }
-
-  .service {
+  .replace-case-page .service {
     padding: 126px 0;
   }
-  .service .container .line.line-1 .image .img-2 {
+  .replace-case-page .service .container .line.line-1 .image .img-2 {
     top: -130px;
   }
-  .service .container .line.line-2 .image .img-2 {
+  .replace-case-page .service .container .line.line-2 .image .img-2 {
     top: -126px;
     left: 305px;
   }
-
-  .commit {
+  .replace-case-page .commit {
     padding: 90px 0 96px;
   }
-
-  .subscribe {
+  .replace-case-page .subscribe {
     padding: 87px 100px 68px;
   }
-
-  .faq {
+  .replace-case-page .faq {
     padding: 90px 0 80px;
   }
 }

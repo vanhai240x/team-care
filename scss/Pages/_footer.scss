@@ -157,14 +157,19 @@
         }
     }
     .company {
-        padding: 2rem 1rem;
+        padding: 45px 1rem;
         .line {
             @include flex(space-between,
             center);
             &.line-1 {
                 display: flex;
+                flex-direction: column;
+                .left {
+                    margin-bottom: 45px;
+                }
                 .right {
                     display: flex;
+                    margin-bottom: 45px;
                     .icon {
                         margin-right: 10px;
                     }
@@ -194,7 +199,9 @@
             &.line-2 {
                 justify-content: space-around;
                 align-items: flex-start;
+                margin-bottom: 25px;
                 .nav-link {
+                    max-width: 120px;
                     .link-light {
                         font-weight: 500;
                         font-size: 14px;
@@ -212,7 +219,7 @@
                 }
             }
             &.line-3 {
-                justify-content: flex-start;
+                justify-content: center;
                 .icon {
                     margin-left: 2rem;
                     cursor: pointer;
@@ -235,6 +242,12 @@
             color: $white;
             margin-bottom: 0;
         }
+    }
+}
+
+@media (min-width: 576px) {
+    .footer .company .line.line-2 .nav-link {
+        max-width: max-content;
     }
 }
 
@@ -337,8 +350,15 @@
             margin: auto;
             .line {
                 &.line-1 {
-                    .left img {
-                        margin-right: 12px;
+                    flex-direction: row;
+                    .left {
+                        margin-bottom: 0;
+                        img {
+                            margin-right: 12px;
+                        }
+                    }
+                    .right {
+                        margin-bottom: 0;
                     }
                 }
                 &.line-2 {
@@ -361,6 +381,7 @@
                     max-width: 180px;
                     width: 20%;
                     justify-content: space-between;
+                    align-items: flex-start;
                     .icon {
                         margin-left: 0;
                     }
@@ -377,6 +398,12 @@
             .line.line-1 .left img {
                 margin-right: 42px;
             }
+            .line.line-2 {
+                max-width: 410px;
+            }
+        }
+        .after-sale .bg-left {
+            width: calc(100% - ((100% - 1200px) / 2 + 460px));
         }
     }
 }
